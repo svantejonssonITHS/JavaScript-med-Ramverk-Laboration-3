@@ -3,7 +3,7 @@
 Grupprojektet för kurserna `Javascript med Ramverk` och `Agil Utveckling`.
 
 ## Gruppmedlemmar
-
+-   Frida Salahshorian
 -   Svante Jonsson
 -   André Chamoun
 -   Fredrik Lind
