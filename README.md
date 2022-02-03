@@ -8,6 +8,7 @@ Grupprojektet för kurserna `Javascript med Ramverk` och `Agil Utveckling`.
 -   André Chamoun
 -   Fredrik Lind
 -   yassine dib
+-   Anna Eriksson
 
 ## Licens
 
