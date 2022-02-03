@@ -6,6 +6,7 @@ Grupprojektet för kurserna `Javascript med Ramverk` och `Agil Utveckling`.
 
 -   Svante Jonsson
 -   André Chamoun
+-   Fredrik Lind
 
 ## Licens
 
