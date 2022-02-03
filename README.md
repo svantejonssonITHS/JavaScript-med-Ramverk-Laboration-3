@@ -5,6 +5,7 @@ Grupprojektet för kurserna `Javascript med Ramverk` och `Agil Utveckling`.
 ## Gruppmedlemmar
 
 -   Svante Jonsson
+-   André Chamoun
 
 ## Licens
 
