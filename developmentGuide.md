@@ -26,4 +26,4 @@ För att starta projektet så den syns i webbläsaren, kör följande kommando i
 ```
 npm run dev
 ```
-Sedan kan du i din webbläsare gå navigera till [localhost:3000](http://localhost:3000/)
+Sedan kan du i din webbläsare navigera till [localhost:3000](http://localhost:3000/)
