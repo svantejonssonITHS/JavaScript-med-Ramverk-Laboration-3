@@ -1,7 +1,7 @@
 # Utvecklingsguide
 
 ## Navigation
-Vårat projekt lever i mappen `project` i repot `JavaScript-med-Ramverk-Laboration-3. <br />
+Vårat projekt lever i mappen `project` i repot `JavaScript-med-Ramverk-Laboration-3`. <br />
 Detta innebär att vi behöver flytta oss dit i terminalen när vi utvecklar.
 
 För att se vart du står i terminalen just nu, kör följande kommando i **en terminal**
