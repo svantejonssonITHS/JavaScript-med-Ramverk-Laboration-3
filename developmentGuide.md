@@ -1,4 +1,4 @@
-# Utvecklings guide
+# Utvecklingsguide
 
 ## Navigation
 Vårat projekt lever i mappen `project` i repot `JavaScript-med-Ramverk-Laboration-3. <br />
