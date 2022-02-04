@@ -5,19 +5,19 @@ import ContactView from './views/ContactView.vue'
 import HomeView from './views/HomeView.vue'
 
 export default createRouter({
-  history: createWebHashHistory(),
-  routes: [
-    {
-      component: AboutView,
-      path: '/about'
-    },
-    {
-      component: ContactView,
-      path: '/contact'
-    },
-    {
-      component: HomeView,
-      path: '/'
-    }
-  ]
+	history: createWebHashHistory(),
+	routes: [
+		{
+			component: AboutView,
+			path: '/about'
+		},
+		{
+			component: ContactView,
+			path: '/contact'
+		},
+		{
+			component: HomeView,
+			path: '/'
+		}
+	]
 })
