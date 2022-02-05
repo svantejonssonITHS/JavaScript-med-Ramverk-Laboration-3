@@ -4,5 +4,6 @@
 	"trailingComma": "none",
 	"vueIndentScriptAndStyle": true,
 	"tabWidth": 4,
-	"useTabs": true
+	"useTabs": true,
+	"printWidth": 120
 }

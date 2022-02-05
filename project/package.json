@@ -6,9 +6,13 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "eslint --ext .js,.vue --fix src",
-		"format": "prettier .  --write"
+		"format": "prettier .  --write",
+        "add": "node addProducts.js"
 	},
 	"dependencies": {
+		"inquirer": "^8.2.0",
+		"is-image": "^3.0.0",
+		"uuid": "^8.3.2",
 		"vue": "^3.2.25",
 		"vue-router": "^4.0.12",
 		"vuex": "^4.0.2"
