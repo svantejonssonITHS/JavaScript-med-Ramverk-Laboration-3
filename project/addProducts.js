@@ -1,5 +1,8 @@
-// Program to add products to the "database"
-// Please do not change ANYTHING in this file!
+/*
+ * @author Linus Romland, Svante Jonsson
+ * @description This program adds a product to the "database".
+ * Please do not touch this file!
+ */
 
 // Dependencies
 const { v4: uuidv4 } = require('uuid');
