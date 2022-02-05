@@ -1,7 +1,7 @@
 <script>
-	import CitiesList from './components/CitiesList.vue'
-	import CounterButton from './components/CounterButton.vue'
-	import HelloWorld from './components/HelloWorld.vue'
+	import CitiesList from './components/CitiesList.vue';
+	import CounterButton from './components/CounterButton.vue';
+	import HelloWorld from './components/HelloWorld.vue';
 
 	export default {
 		components: {
@@ -9,7 +9,7 @@
 			CounterButton,
 			HelloWorld
 		}
-	}
+	};
 </script>
 
 <template>

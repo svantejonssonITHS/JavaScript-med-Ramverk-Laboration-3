@@ -6,7 +6,7 @@
 				type: String
 			}
 		}
-	}
+	};
 </script>
 
 <style>
