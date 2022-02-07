@@ -1,0 +1,96 @@
+[
+	{
+		"id": "8f712c07-796d-4028-988d-6aa2c941523c",
+		"title": "Circular Collection",
+		"category": "Solglasögon",
+		"description": "Cat eye solglasögon med mönstrade bruna bågar, som gör dessa solglasögon till ett \"Must have\" i sommar och kommer garanterat ge dig en unik och trendig look.",
+		"images": [
+			"8f712c07-796d-4028-988d-6aa2c941523c/0.jpg",
+			"8f712c07-796d-4028-988d-6aa2c941523c/1.jpg",
+			"8f712c07-796d-4028-988d-6aa2c941523c/2.jpg"
+		],
+		"stock": 21,
+		"price": 2000
+	},
+	{
+		"id": "d8907f9d-af50-49fe-afcc-1cd394aba056",
+		"title": "Caroline Svedbom MIRO BRACELET CRYSTAL",
+		"category": "Armband",
+		"description": "Miro Bracelet är klassiskt tunt armband med gnistrande kristaller utav högsta kvalitét hela vägen runt. Kedjan är 15 cm lång med en 4 cm lång förlängningskedja. Tillverkad av mässing med 18 K guld- eller rhodiumplätering. Designad i Sverige, handgjord i Grekland. Levereras i Caroline Svedbom ask.",
+		"images": ["d8907f9d-af50-49fe-afcc-1cd394aba056/0.jpg"],
+		"stock": 2,
+		"price": 529
+	},
+	{
+		"id": "c0ddf106-e306-463d-9736-4a652466f464",
+		"title": "Armband med röta och vita pärlor",
+		"category": "Armband",
+		"description": "Detta armband har prytt med röta och vita pärlor.",
+		"images": ["c0ddf106-e306-463d-9736-4a652466f464/0.jpg"],
+		"stock": 10,
+		"price": 149
+	},
+	{
+		"id": "7c9c1f27-c73f-433f-a8e9-fbe0d9b1bd92",
+		"title": "Läderarmband med pärlor",
+		"category": "Armband",
+		"description": "Läderarmband utprytt med pärlor i fina färger.",
+		"images": ["7c9c1f27-c73f-433f-a8e9-fbe0d9b1bd92/0.jpg"],
+		"stock": 7,
+		"price": 199
+	},
+	{
+		"id": "a1529887-69c6-49fd-8be6-1844a8ff54be",
+		"title": "Armband med stenar",
+		"category": "Armband",
+		"description": "Armband prytt med stenar i olika färger och storlekar.",
+		"images": ["a1529887-69c6-49fd-8be6-1844a8ff54be/0.jpg"],
+		"stock": 2,
+		"price": 99
+	},
+	{
+		"id": "997323a5-68d0-420e-8e1d-afb902838f90",
+		"title": "Armband i koppar",
+		"category": "Armband",
+		"description": "Detta koppararmband snirklar sig runt handleden.",
+		"images": ["997323a5-68d0-420e-8e1d-afb902838f90/0.jpg"],
+		"stock": 25,
+		"price": 499
+	},
+	{
+		"id": "7d1ebfe9-0a7e-4db6-a068-b1045a3251fe",
+		"title": "Örhängen med slipade blåa stenar",
+		"category": "Örhängen",
+		"description": "Dessa örhängena är väldigt fina.",
+		"images": ["7d1ebfe9-0a7e-4db6-a068-b1045a3251fe/0.jpg"],
+		"stock": 4,
+		"price": 499
+	},
+	{
+		"id": "59555930-be69-466f-91dc-2f564c26cc4b",
+		"title": "Örhängen med slipad topas",
+		"category": "Örhängen",
+		"description": "Örhängen med en slipad topas. Passar till vissa kläder.",
+		"images": ["59555930-be69-466f-91dc-2f564c26cc4b/0.jpg"],
+		"stock": 13,
+		"price": 449
+	},
+	{
+		"id": "71a2e053-be41-4e7d-bebd-60375ab93b26",
+		"title": "Röda metallblommor",
+		"category": "Örhängen",
+		"description": "Dessa röda metallblommor sätter färg på vardagen.",
+		"images": ["71a2e053-be41-4e7d-bebd-60375ab93b26/0.jpg"],
+		"stock": 16,
+		"price": 149
+	},
+	{
+		"id": "9c18dfb9-a936-46b7-ae19-e020ec9f0585",
+		"title": "Metallörhänge",
+		"category": "Örhängen",
+		"description": "Dessa örhängena är gjorda i metall.",
+		"images": ["9c18dfb9-a936-46b7-ae19-e020ec9f0585/0.jpg"],
+		"stock": 3,
+		"price": 249
+	}
+]
