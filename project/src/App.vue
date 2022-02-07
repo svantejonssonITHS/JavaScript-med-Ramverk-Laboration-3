@@ -1,4 +1,5 @@
 <script>
+import FooterSection from './components/FooterSection.vue';
 	import CitiesList from './components/CitiesList.vue';
 	import CounterButton from './components/CounterButton.vue';
 
@@ -9,6 +10,7 @@
 		components: {
 			CitiesList,
 			CounterButton,
+            FooterSection,
 
 			NavBar,
 			HeaderImage
@@ -26,5 +28,9 @@
 	<CounterButton />
 	<main>
 		<RouterView />
+
 	</main>
+    <footer>
+        <FooterSection />
+    </footer>
 </template>
