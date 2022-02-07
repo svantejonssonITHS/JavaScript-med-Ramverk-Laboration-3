@@ -7,7 +7,7 @@
 	export default {
 		data() {
 			return {
-				footerText: 'Copyright anno 2022'
+				footerText: 'Copyright Accessories by five 2022'
 			};
 		}
 	};
