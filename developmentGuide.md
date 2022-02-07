@@ -18,7 +18,7 @@ För att installera nödvändiga dependecies, kör följande kommando i **en ter
 ```
 npm install
 ```
-**Observera:** Detta behövs göra första gången du clonar projektet (`git clone`) och kan även behöva göras efter en `git pull`.
+**Observera:** Detta behöver göras första gången du clonar projektet (`git clone`) och kan även behöva göras efter en `git pull`.
 
 ## Köra projektet i utvecklingsläge
 För att starta projektet så den syns i webbläsaren, kör följande kommando i **en terminal**
