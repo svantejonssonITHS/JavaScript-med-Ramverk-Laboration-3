@@ -56,5 +56,41 @@
 		"images": ["997323a5-68d0-420e-8e1d-afb902838f90/0.jpg"],
 		"stock": 25,
 		"price": 499
+	},
+	{
+		"id": "7d1ebfe9-0a7e-4db6-a068-b1045a3251fe",
+		"title": "Örhängen med slipade blåa stenar",
+		"category": "Örhängen",
+		"description": "Dessa örhängena är väldigt fina.",
+		"images": ["7d1ebfe9-0a7e-4db6-a068-b1045a3251fe/0.jpg"],
+		"stock": 4,
+		"price": 499
+	},
+	{
+		"id": "59555930-be69-466f-91dc-2f564c26cc4b",
+		"title": "Örhängen med slipad topas",
+		"category": "Örhängen",
+		"description": "Örhängen med en slipad topas. Passar till vissa kläder.",
+		"images": ["59555930-be69-466f-91dc-2f564c26cc4b/0.jpg"],
+		"stock": 13,
+		"price": 449
+	},
+	{
+		"id": "71a2e053-be41-4e7d-bebd-60375ab93b26",
+		"title": "Röda metallblommor",
+		"category": "Örhängen",
+		"description": "Dessa röda metallblommor sätter färg på vardagen.",
+		"images": ["71a2e053-be41-4e7d-bebd-60375ab93b26/0.jpg"],
+		"stock": 16,
+		"price": 149
+	},
+	{
+		"id": "9c18dfb9-a936-46b7-ae19-e020ec9f0585",
+		"title": "Metallörhänge",
+		"category": "Örhängen",
+		"description": "Dessa örhängena är gjorda i metall.",
+		"images": ["9c18dfb9-a936-46b7-ae19-e020ec9f0585/0.jpg"],
+		"stock": 3,
+		"price": 249
 	}
 ]
