@@ -20,5 +20,41 @@
 		"images": ["d8907f9d-af50-49fe-afcc-1cd394aba056/0.jpg"],
 		"stock": 2,
 		"price": 529
+	},
+	{
+		"id": "c0ddf106-e306-463d-9736-4a652466f464",
+		"title": "Armband med röta och vita pärlor",
+		"category": "Armband",
+		"description": "Detta armband har prytt med röta och vita pärlor.",
+		"images": ["c0ddf106-e306-463d-9736-4a652466f464/0.jpg"],
+		"stock": 10,
+		"price": 149
+	},
+	{
+		"id": "7c9c1f27-c73f-433f-a8e9-fbe0d9b1bd92",
+		"title": "Läderarmband med pärlor",
+		"category": "Armband",
+		"description": "Läderarmband utprytt med pärlor i fina färger.",
+		"images": ["7c9c1f27-c73f-433f-a8e9-fbe0d9b1bd92/0.jpg"],
+		"stock": 7,
+		"price": 199
+	},
+	{
+		"id": "a1529887-69c6-49fd-8be6-1844a8ff54be",
+		"title": "Armband med stenar",
+		"category": "Armband",
+		"description": "Armband prytt med stenar i olika färger och storlekar.",
+		"images": ["a1529887-69c6-49fd-8be6-1844a8ff54be/0.jpg"],
+		"stock": 2,
+		"price": 99
+	},
+	{
+		"id": "997323a5-68d0-420e-8e1d-afb902838f90",
+		"title": "Armband i koppar",
+		"category": "Armband",
+		"description": "Detta koppararmband snirklar sig runt handleden.",
+		"images": ["997323a5-68d0-420e-8e1d-afb902838f90/0.jpg"],
+		"stock": 25,
+		"price": 499
 	}
 ]
