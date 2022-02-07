@@ -1,12 +1,21 @@
+<template>
+	<footer>
+		<p>{{ footerText }}</p>
+	</footer>
+</template>
 <script>
 	export default {
 		data() {
-			return {};
+			return {
+				footerText: 'Copyright anno 2022'
+			};
 		}
 	};
 </script>
-
-<template>
-	<h1>footer</h1>
-</template>
-<style></style>
+<style scoped>
+	footer {
+		background-color: lightcyan;
+		padding: 10px;
+		text-align: center;
+	}
+</style>
