@@ -6,10 +6,10 @@
 
 	.imageacc {
 		max-height: 400px;
-		margin-left: 80px;
+		margin-left: 70px;
 	}
 	.logoacc {
-		margin-left: 50px;
+		margin-left: 40px;
 	}
 </style>
 
