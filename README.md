@@ -3,27 +3,19 @@
 Grupprojektet för kurserna `Javascript med Ramverk` och `Agil Utveckling`.
 
 ## Utvecklingsguide
+
 För information om hur utvecklingen går till, tryck [här](developmentGuide.md#utvecklingsguide).
 
 ## Gruppmedlemmar
 
-- Frida Salahshorian
-- Svante Jonsson
-- André Chamoun
-- Fredrik Lind
-- Yassine Dib
-- Anna Eriksson
+-   Svante Jonsson
+-   André Chamoun
+-   Fredrik Lind
+-   Anna Eriksson
+-   Yassine Dib
+-   Frida Salahshorian
+-   Jaya Mishra
 
 ## Licens
 
 Distribueras under MIT-licensen. Se [`LICENSE`](LICENSE) för mer information.
-
-## Tips! Så här kan ni (en av er) publicera ert projekt på GitHub:
-
-- npx degit jonkri/vite-vue-template#project group-project
-- cd group-project
-- git init
-- git remote add origin ...
-- git push -u origin main
-- git branch
-- git remote -v

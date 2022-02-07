@@ -1,15 +1,12 @@
 <script>
 	export default {
-
 		data() {
-			return {
-
-			};
+			return {};
 		}
 	};
 </script>
 
 <template>
-<h1>footer</h1>
+	<h1>footer</h1>
 </template>
 <style></style>

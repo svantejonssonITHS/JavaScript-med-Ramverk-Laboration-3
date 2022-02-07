@@ -1,23 +1,24 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
-import AboutView from './views/AboutView.vue';
-import ContactView from './views/ContactView.vue';
-import HomeView from './views/HomeView.vue';
-
-export default createRouter({
+const router = createRouter({
 	history: createWebHashHistory(),
 	routes: [
 		{
-			component: AboutView,
-			path: '/about'
-		},
-		{
-			component: ContactView,
-			path: '/contact'
-		},
-		{
-			component: HomeView,
+			name: 'Home',
+			component: () => import('./views/Home.vue'),
 			path: '/'
+		},
+		{
+			name: 'Products',
+			component: () => import('./views/Product.vue'),
+			path: '/product/:id'
 		}
 	]
 });
+
+router.beforeEach((to, from, next) => {
+	document.title = `Accessories by 5 - ${String(to.name)}`;
+	next();
+});
+
+export default router;
