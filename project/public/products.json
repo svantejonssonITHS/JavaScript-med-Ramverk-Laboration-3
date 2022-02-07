@@ -1,0 +1,24 @@
+[
+	{
+		"id": "8f712c07-796d-4028-988d-6aa2c941523c",
+		"title": "Circular Collection",
+		"category": "Solglasögon",
+		"description": "Cat eye solglasögon med mönstrade bruna bågar, som gör dessa solglasögon till ett \"Must have\" i sommar och kommer garanterat ge dig en unik och trendig look.",
+		"images": [
+			"8f712c07-796d-4028-988d-6aa2c941523c/0.jpg",
+			"8f712c07-796d-4028-988d-6aa2c941523c/1.jpg",
+			"8f712c07-796d-4028-988d-6aa2c941523c/2.jpg"
+		],
+		"stock": 21,
+		"price": 2000
+	},
+	{
+		"id": "d8907f9d-af50-49fe-afcc-1cd394aba056",
+		"title": "Caroline Svedbom MIRO BRACELET CRYSTAL",
+		"category": "Armband",
+		"description": "Miro Bracelet är klassiskt tunt armband med gnistrande kristaller utav högsta kvalitét hela vägen runt. Kedjan är 15 cm lång med en 4 cm lång förlängningskedja. Tillverkad av mässing med 18 K guld- eller rhodiumplätering. Designad i Sverige, handgjord i Grekland. Levereras i Caroline Svedbom ask.",
+		"images": ["d8907f9d-af50-49fe-afcc-1cd394aba056/0.jpg"],
+		"stock": 2,
+		"price": 529
+	}
+]

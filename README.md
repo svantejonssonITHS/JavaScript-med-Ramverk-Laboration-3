@@ -2,6 +2,9 @@
 
 Grupprojektet för kurserna `Javascript med Ramverk` och `Agil Utveckling`.
 
+## Utvecklingsguide
+För information om hur utvecklingen går till, tryck [här](developmentGuide.md#utvecklingsguide).
+
 ## Gruppmedlemmar
 -   Frida Salahshorian
 -   Svante Jonsson
