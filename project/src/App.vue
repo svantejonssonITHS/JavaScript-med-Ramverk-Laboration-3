@@ -1,5 +1,5 @@
 <script>
-import FooterSection from './components/FooterSection.vue';
+    import FooterSection from './components/FooterSection.vue';
 	import CitiesList from './components/CitiesList.vue';
 	import CounterButton from './components/CounterButton.vue';
 
@@ -11,7 +11,6 @@ import FooterSection from './components/FooterSection.vue';
 			CitiesList,
 			CounterButton,
             FooterSection,
-
 			NavBar,
 			HeaderImage
 		}
