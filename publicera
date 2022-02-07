@@ -1,8 +1,0 @@
-
-## Tips! Så här kan ni (en av er) publicera ert projekt på GitHub:
-
-- npx degit jonkri/vite-vue-template#project group-project
-- cd group-project
-- git init
-- git remote add origin ...
-- git push -u origin main
