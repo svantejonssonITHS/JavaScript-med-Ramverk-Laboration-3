@@ -14,7 +14,7 @@
 </script>
 <style scoped>
 	footer {
-		background-color: rgb(2, 22, 22);
+		background-color: rgb(39, 44, 44);
 		padding: 10px;
 		text-align: center;
 		color: rgb(223, 192, 16);
