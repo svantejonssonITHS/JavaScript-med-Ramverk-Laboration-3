@@ -20,7 +20,10 @@
 		<h2 class="fw-bold">{{ title }}</h2>
 		<p class="my-4 fs-5">{{ price }} <span>SEK</span></p>
 		<p>{{ description }}</p>
-		<p>{{ stock }}</p>
+		<p class="">
+			Mängd i lager:
+			<span :class="{ 'text-danger': fewInStock }">{{ stock }} <span v-if="fewInStock">(Få kvar)</span></span>
+		</p>
 	</section>
 </template>
 
@@ -52,6 +55,12 @@
 				type: Number,
 				required: true,
 				default: 0
+			}
+		},
+		computed: {
+			fewInStock() {
+				console.log(this.stock >= 10);
+				return this.stock >= 10 ? false : true;
 			}
 		}
 	};
