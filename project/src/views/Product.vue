@@ -1,20 +1,24 @@
 <template>
-	<article v-if="product">
+	<article v-if="product" class="d-flex">
 		<section>
 			<img :src="'assets/products/' + product.images[0]" />
 		</section>
 		<section>
-			<router-link to="/product/d8907f9d-af50-49fe-afcc-1cd394aba056">{{ product.category }}</router-link>
-			<h2>{{ product.title }}</h2>
-			<p>{{ product.price }} <span>SEK</span></p>
-			<p>{{ product.description }}</p>
-			<p>{{ product.stock }}</p>
+			<ProductDetails
+				:title="product.title"
+				:category="product.category"
+				:description="product.description"
+				:price="product.price"
+				:stock="product.stock"
+			/>
 		</section>
 	</article>
 </template>
 <script>
+	import ProductDetails from '../components/ProductDetails.vue';
 	export default {
 		name: 'Product',
+		components: { ProductDetails },
 		data() {
 			return {
 				product: null
