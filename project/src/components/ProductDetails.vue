@@ -18,7 +18,7 @@
 			</ol>
 		</nav>
 		<h2 class="fw-bold">{{ title }}</h2>
-		<p>{{ price }} <span>SEK</span></p>
+		<p class="my-4 fs-5">{{ price }} <span>SEK</span></p>
 		<p>{{ description }}</p>
 		<p>{{ stock }}</p>
 	</section>
