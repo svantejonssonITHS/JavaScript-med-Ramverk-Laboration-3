@@ -128,5 +128,41 @@
 		"images": ["bdbe5a4c-92a2-49ec-ab72-5b3da5fa2ce9/0.jpg"],
 		"stock": 181,
 		"price": 149
+	},
+	{
+		"id": "032cbc00-e00c-46b5-8a37-88ac7bd66d96",
+		"title": "Klocka i metall",
+		"category": "Klockor",
+		"description": "Denna klockan är stilren och passar bra till det mesta.",
+		"images": ["032cbc00-e00c-46b5-8a37-88ac7bd66d96/0.jpg"],
+		"stock": 13,
+		"price": 1299
+	},
+	{
+		"id": "7bcae998-b7dc-4494-9a6c-56478d890cf8",
+		"title": "Klocka med armband av gummi",
+		"category": "Klockor",
+		"description": "Denna klockan har ett armband av gummi och även en digital komponent.",
+		"images": ["7bcae998-b7dc-4494-9a6c-56478d890cf8/0.jpg"],
+		"stock": 1,
+		"price": 349
+	},
+	{
+		"id": "681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0",
+		"title": "Klocka med armband i läder",
+		"category": "Klockor",
+		"description": "Denna klockan har ett snyggt armband i läder. Urtavlan består av romerska numeraler.",
+		"images": ["681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0/0.jpg"],
+		"stock": 21,
+		"price": 1499
+	},
+	{
+		"id": "4ab4db67-9614-4908-b563-63cf42585749",
+		"title": "Högteknisk klocka",
+		"category": "Klockor",
+		"description": "Denna klocka är högteknisk och är väldigt hållbar.",
+		"images": ["4ab4db67-9614-4908-b563-63cf42585749/0.jpg"],
+		"stock": 52,
+		"price": 899
 	}
 ]
