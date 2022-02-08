@@ -1,8 +1,22 @@
 <template>
 	<section>
-		<router-link to="/product/d8907f9d-af50-49fe-afcc-1cd394aba056" class="text-muted text-underline-hover"
-			>{{ category }}/</router-link
-		>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item" aria-current="page">
+					<router-link to="/product/d8907f9d-af50-49fe-afcc-1cd394aba056" class="text-underline-hover"
+						>Sortiment</router-link
+					>
+				</li>
+				<li class="breadcrumb-item" aria-current="page">
+					<router-link to="/product/d8907f9d-af50-49fe-afcc-1cd394aba056" class="text-underline-hover">{{
+						category
+					}}</router-link>
+				</li>
+				<li class="breadcrumb-item active" aria-current="page">
+					{{ title }}
+				</li>
+			</ol>
+		</nav>
 		<h2 class="fw-bold">{{ title }}</h2>
 		<p>{{ price }} <span>SEK</span></p>
 		<p>{{ description }}</p>
