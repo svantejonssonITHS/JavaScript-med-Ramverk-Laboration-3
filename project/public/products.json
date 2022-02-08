@@ -92,5 +92,77 @@
 		"images": ["9c18dfb9-a936-46b7-ae19-e020ec9f0585/0.jpg"],
 		"stock": 3,
 		"price": 249
+	},
+	{
+		"id": "dda04347-b918-4f5d-9f7d-206fe65c6e30",
+		"title": "Inristad guldhalsband",
+		"category": "Halsband",
+		"description": "Detta halsband kommer att förgylla din look!",
+		"images": ["dda04347-b918-4f5d-9f7d-206fe65c6e30/0.jpg"],
+		"stock": 9,
+		"price": 499
+	},
+	{
+		"id": "7be728f6-29a5-4587-8c07-825587d5ac9d",
+		"title": "Träring",
+		"category": "Halsband",
+		"description": "Denna ring är fint detaljerad med svarta mönster.",
+		"images": ["7be728f6-29a5-4587-8c07-825587d5ac9d/0.jpg"],
+		"stock": 17,
+		"price": 149
+	},
+	{
+		"id": "f357fc33-1d11-498d-8e32-b9d7cde2461d",
+		"title": "Halsband med guldsymboler",
+		"category": "Halsband",
+		"description": "Detta halsband kan säkert passa till någon sorts klädsel.",
+		"images": ["f357fc33-1d11-498d-8e32-b9d7cde2461d/0.jpg"],
+		"stock": 3,
+		"price": 2999
+	},
+	{
+		"id": "bdbe5a4c-92a2-49ec-ab72-5b3da5fa2ce9",
+		"title": "Stenhalsband",
+		"category": "Halsband",
+		"description": "Detta halsband är prytt med stenar, stora som små.",
+		"images": ["bdbe5a4c-92a2-49ec-ab72-5b3da5fa2ce9/0.jpg"],
+		"stock": 181,
+		"price": 149
+	},
+	{
+		"id": "032cbc00-e00c-46b5-8a37-88ac7bd66d96",
+		"title": "Klocka i metall",
+		"category": "Klockor",
+		"description": "Denna klockan är stilren och passar bra till det mesta.",
+		"images": ["032cbc00-e00c-46b5-8a37-88ac7bd66d96/0.jpg"],
+		"stock": 13,
+		"price": 1299
+	},
+	{
+		"id": "7bcae998-b7dc-4494-9a6c-56478d890cf8",
+		"title": "Klocka med armband av gummi",
+		"category": "Klockor",
+		"description": "Denna klockan har ett armband av gummi och även en digital komponent.",
+		"images": ["7bcae998-b7dc-4494-9a6c-56478d890cf8/0.jpg"],
+		"stock": 1,
+		"price": 349
+	},
+	{
+		"id": "681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0",
+		"title": "Klocka med armband i läder",
+		"category": "Klockor",
+		"description": "Denna klockan har ett snyggt armband i läder. Urtavlan består av romerska numeraler.",
+		"images": ["681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0/0.jpg"],
+		"stock": 21,
+		"price": 1499
+	},
+	{
+		"id": "4ab4db67-9614-4908-b563-63cf42585749",
+		"title": "Högteknisk klocka",
+		"category": "Klockor",
+		"description": "Denna klocka är högteknisk och är väldigt hållbar.",
+		"images": ["4ab4db67-9614-4908-b563-63cf42585749/0.jpg"],
+		"stock": 52,
+		"price": 899
 	}
 ]
