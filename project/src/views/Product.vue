@@ -1,5 +1,5 @@
 <template>
-	<article v-if="product" class="d-flex">
+	<article v-if="product" class="d-flex w-75 m-auto">
 		<section>
 			<img :src="'assets/products/' + product.images[0]" />
 		</section>
