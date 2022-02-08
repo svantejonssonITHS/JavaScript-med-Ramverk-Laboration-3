@@ -18,6 +18,9 @@
 	button {
 		margin-left: 10px;
 	}
+	#cart {
+		font-size: 2em;
+	}
 	form {
 		margin-right: 40px;
 		display: inline-flex;
@@ -34,10 +37,13 @@
 		margin-left: 40px;
 		font-size: x-large;
 	}
+	#user {
+		font-size: 2em;
+	}
 </style>
 <template>
 	<div id="nav">
-		<nav class="navbar navbar-expand-lg justify-content-around">
+		<nav class="navbar navbar-expand-lg justify-content-between">
 			<div class="navbar-nav">
 				<router-link to="/" class="nav-item nav-link">Hem</router-link>
 				<router-link to="/about" class="nav-item nav-link">Våra produkter</router-link>
@@ -48,6 +54,12 @@
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
 				<button class="btn btn-dark" type="submit">Search</button>
 			</form>
+			<div class="navbar-nav">
+				<router-link to="/" class="nav-item nav-link"><i class="fa fa-user-plus" id="user"></i></router-link>
+				<router-link to="/" class="nav-item nav-link"
+					><i class="fa fa-shopping-cart" id="cart"></i
+				></router-link>
+			</div>
 		</nav>
 	</div>
 </template>
