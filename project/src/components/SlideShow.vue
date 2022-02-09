@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<img :src="imgShown" />
+		<img :src="imgShown" alt="Product image" class="w-100" />
 	</section>
 </template>
 
@@ -14,6 +14,16 @@
 				default: function () {
 					return [];
 				}
+			}
+		},
+		data() {
+			return {
+				shownImgIndex: 0
+			};
+		},
+		computed: {
+			imgShown() {
+				return `assets/products/${this.images[this.shownImgIndex]}`;
 			}
 		}
 	};
