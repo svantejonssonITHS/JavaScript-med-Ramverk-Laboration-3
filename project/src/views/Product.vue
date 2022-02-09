@@ -1,7 +1,8 @@
 <template>
 	<article v-if="product" class="d-flex w-75 m-auto">
-		<SlideShow />
+		<SlideShow class="w-40" :images="product.images" />
 		<ProductDetails
+			class="w-60"
 			:title="product.title"
 			:category="product.category"
 			:description="product.description"
@@ -34,4 +35,12 @@
 		}
 	};
 </script>
-<style scoped></style>
+<style scoped>
+	.w-60 {
+		width: 60%;
+	}
+
+	.w-40 {
+		width: 40%;
+	}
+</style>
