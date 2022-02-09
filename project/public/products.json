@@ -164,5 +164,41 @@
 		"images": ["4ab4db67-9614-4908-b563-63cf42585749/0.jpg"],
 		"stock": 52,
 		"price": 899
+	},
+	{
+		"id": "0cd2edc6-cbfa-440b-9c09-1c569042c69b",
+		"title": "Jenna - cat eye solglasögon",
+		"category": "Solglasögon",
+		"description": "Glasögon med gulddetaljer som ger dig en klassisk look!",
+		"images": ["0cd2edc6-cbfa-440b-9c09-1c569042c69b/0.jpg"],
+		"stock": 9,
+		"price": 249
+	},
+	{
+		"id": "7b67fbcb-20c8-45c5-9f8a-3ff31eab85a4",
+		"title": "Hurricane Frog polariserande glasögon",
+		"category": "Solglasögon",
+		"description": "Dessa solglasögon har blått polariserande glas för att få bort så mycket solljus som möjligt.",
+		"images": ["7b67fbcb-20c8-45c5-9f8a-3ff31eab85a4/0.jpg"],
+		"stock": 192,
+		"price": 149
+	},
+	{
+		"id": "f6679b4b-efc5-4a92-950f-ff7274b784c5",
+		"title": "Solglasögon tropical",
+		"category": "Solglasögon",
+		"description": "Solglasögon som ger en lite roligare bild.",
+		"images": ["f6679b4b-efc5-4a92-950f-ff7274b784c5/0.jpg"],
+		"stock": 14,
+		"price": 89
+	},
+	{
+		"id": "f9431042-25e0-4ba5-8291-37c2e16a8881",
+		"title": "Scott Sport Shield Solglasögon",
+		"category": "Solglasögon",
+		"description": "Solglasögon som är perfekt för personer som cyklar mycket.",
+		"images": ["f9431042-25e0-4ba5-8291-37c2e16a8881/0.png"],
+		"stock": 19,
+		"price": 1199
 	}
 ]
