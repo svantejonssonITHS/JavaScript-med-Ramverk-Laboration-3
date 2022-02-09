@@ -26,6 +26,9 @@
 		margin-right: 40px;
 		display: inline-flex;
 	}
+	.icon {
+		display: none;
+	}
 	.imgLogo {
 		max-width: 45%;
 	}
@@ -44,22 +47,40 @@
 </style>
 <template>
 	<div id="nav">
-		<nav class="navbar navbar-expand-lg justify-content-between">
-			<div class="navbar-nav">
-				<router-link to="/" class="nav-item nav-link">Hem</router-link>
-				<router-link to="/about" class="nav-item nav-link">Våra produkter</router-link>
-				<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
-			</div>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo01"
+					aria-controls="navbarTogglerDemo01"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<div class="navbar-nav mr-auto mb-2 mb-lg-0">
+						<router-link to="/" class="nav-item nav-link">Hem</router-link>
+						<router-link to="/about" class="nav-item nav-link">Våra produkter</router-link>
+						<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
+					</div>
 
-			<form class="form-inline">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-				<button class="btn btn-dark" type="submit">Search</button>
-			</form>
-			<div class="navbar-nav">
-				<router-link to="/" class="nav-item nav-link"><i class="fa fa-user-plus" id="user"></i></router-link>
-				<router-link to="/" class="nav-item nav-link"
-					><i class="fa fa-shopping-cart" id="cart"></i
-				></router-link>
+					<form class="d-flex">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+						<button class="btn btn-dark" type="submit">Search</button>
+					</form>
+				</div>
+
+				<div class="navbar-nav">
+					<router-link to="/" class="nav-item nav-link"
+						><i class="fa fa-user-plus" id="user"></i
+					></router-link>
+					<router-link to="/" class="nav-item nav-link"
+						><i class="fa fa-shopping-cart" id="cart"></i
+					></router-link>
+				</div>
 			</div>
 		</nav>
 	</div>
