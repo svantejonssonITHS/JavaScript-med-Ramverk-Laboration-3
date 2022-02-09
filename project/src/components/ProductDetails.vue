@@ -59,7 +59,6 @@
 		},
 		computed: {
 			fewInStock() {
-				console.log(this.stock >= 10);
 				return this.stock >= 10 ? false : true;
 			}
 		}
