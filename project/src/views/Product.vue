@@ -1,8 +1,6 @@
 <template>
 	<article v-if="product" class="d-flex w-75 m-auto">
-		<section>
-			<img :src="'assets/products/' + product.images[0]" />
-		</section>
+		<SlideShow />
 		<ProductDetails
 			:title="product.title"
 			:category="product.category"
@@ -13,10 +11,12 @@
 	</article>
 </template>
 <script>
+	import SlideShow from '../components/SlideShow.vue';
 	import ProductDetails from '../components/ProductDetails.vue';
+
 	export default {
 		name: 'Product',
-		components: { ProductDetails },
+		components: { SlideShow, ProductDetails },
 		data() {
 			return {
 				product: null
