@@ -3,15 +3,13 @@
 		<section>
 			<img :src="'assets/products/' + product.images[0]" />
 		</section>
-		<section>
-			<ProductDetails
-				:title="product.title"
-				:category="product.category"
-				:description="product.description"
-				:price="product.price"
-				:stock="product.stock"
-			/>
-		</section>
+		<ProductDetails
+			:title="product.title"
+			:category="product.category"
+			:description="product.description"
+			:price="product.price"
+			:stock="product.stock"
+		/>
 	</article>
 </template>
 <script>
