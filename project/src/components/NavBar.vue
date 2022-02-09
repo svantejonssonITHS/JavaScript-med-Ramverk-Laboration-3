@@ -20,6 +20,7 @@
 	}
 	#cart {
 		font-size: 2em;
+		margin-right: 40px;
 	}
 	form {
 		margin-right: 40px;
