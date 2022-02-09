@@ -164,5 +164,81 @@
 		"images": ["4ab4db67-9614-4908-b563-63cf42585749/0.jpg"],
 		"stock": 52,
 		"price": 899
+	},
+	{
+		"id": "0cd2edc6-cbfa-440b-9c09-1c569042c69b",
+		"title": "Jenna - cat eye solglasögon",
+		"category": "Solglasögon",
+		"description": "Glasögon med gulddetaljer som ger dig en klassisk look!",
+		"images": ["0cd2edc6-cbfa-440b-9c09-1c569042c69b/0.jpg"],
+		"stock": 9,
+		"price": 249
+	},
+	{
+		"id": "7b67fbcb-20c8-45c5-9f8a-3ff31eab85a4",
+		"title": "Hurricane Frog polariserande glasögon",
+		"category": "Solglasögon",
+		"description": "Dessa solglasögon har blått polariserande glas för att få bort så mycket solljus som möjligt.",
+		"images": ["7b67fbcb-20c8-45c5-9f8a-3ff31eab85a4/0.jpg"],
+		"stock": 192,
+		"price": 149
+	},
+	{
+		"id": "f6679b4b-efc5-4a92-950f-ff7274b784c5",
+		"title": "Solglasögon tropical",
+		"category": "Solglasögon",
+		"description": "Solglasögon som ger en lite roligare bild.",
+		"images": ["f6679b4b-efc5-4a92-950f-ff7274b784c5/0.jpg"],
+		"stock": 14,
+		"price": 89
+	},
+	{
+		"id": "f9431042-25e0-4ba5-8291-37c2e16a8881",
+		"title": "Scott Sport Shield Solglasögon",
+		"category": "Solglasögon",
+		"description": "Solglasögon som är perfekt för personer som cyklar mycket.",
+		"images": ["f9431042-25e0-4ba5-8291-37c2e16a8881/0.png"],
+		"stock": 19,
+		"price": 1199
+	},
+	{
+		"id": "85a5c68f-a3ce-4217-ab2a-592f99d1fa1b",
+		"title": "Kayoba plånbok",
+		"category": "Plånböcker",
+		"description": "Smart plånbok med flera fack.",
+		"images": [
+			"85a5c68f-a3ce-4217-ab2a-592f99d1fa1b/0.jpg",
+			"85a5c68f-a3ce-4217-ab2a-592f99d1fa1b/1.jpg",
+			"85a5c68f-a3ce-4217-ab2a-592f99d1fa1b/2.jpg"
+		],
+		"stock": 14,
+		"price": 149
+	},
+	{
+		"id": "2029ce36-b763-4856-8a6b-dc79d2f0a8c6",
+		"title": "Plånbok i renskinn",
+		"category": "Plånböcker",
+		"description": "Denna plånkbok är gjord av renskinn.",
+		"images": ["2029ce36-b763-4856-8a6b-dc79d2f0a8c6/0.jpg"],
+		"stock": 17,
+		"price": 249
+	},
+	{
+		"id": "23a1cdad-9c66-49ba-aacf-01e43c9ce869",
+		"title": "Plånbok med flera fack",
+		"category": "Plånböcker",
+		"description": "Denna plånbok fack för kort och sedlar.",
+		"images": ["23a1cdad-9c66-49ba-aacf-01e43c9ce869/0.jpg"],
+		"stock": 203,
+		"price": 149
+	},
+	{
+		"id": "b0e9353a-2118-41db-8b53-047550b496bd",
+		"title": "belsac plånbok",
+		"category": "Plånböcker",
+		"description": "Plånboken har flera fack för kort.",
+		"images": ["b0e9353a-2118-41db-8b53-047550b496bd/0.jpg"],
+		"stock": 15,
+		"price": 399
 	}
 ]
