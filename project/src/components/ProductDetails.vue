@@ -26,7 +26,9 @@
 				>{{ stock }} <span v-if="fewInStock">(Få kvar)</span></span
 			>
 		</p>
-		<button class="btn btn-secondary col-4 py-3 my-5 fw-bold">Lägg till i varukorgen</button>
+		<button class="btn btn-secondary col-4 py-3 my-5 fw-bold" @click="addToCartClicked">
+			Lägg till i varukorgen
+		</button>
 	</section>
 </template>
 
@@ -58,6 +60,12 @@
 				type: Number,
 				required: true,
 				default: 0
+			}
+		},
+		emits: ['addToCartClicked'],
+		methods: {
+			addToCartClicked() {
+				this.$emit('addToCartClicked');
 			}
 		},
 		computed: {
