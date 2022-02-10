@@ -58,7 +58,12 @@
 	.thumbnail {
 		max-width: 125px;
 	}
+
+	.thumbnail:hover {
+		filter: brightness(90%);
+	}
+
 	.activeImg {
-		filter: brightness(75%);
+		filter: brightness(75%) !important;
 	}
 </style>
