@@ -24,6 +24,9 @@
 			Mängd i lager:
 			<span :class="{ 'text-danger': fewInStock }">{{ stock }} <span v-if="fewInStock">(Få kvar)</span></span>
 		</p>
+		<section class="d-flex justify-content-center my-5">
+			<button class="btn btn-primary col-4 py-3">Lägg till i varukorgen</button>
+		</section>
 	</section>
 </template>
 
