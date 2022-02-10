@@ -5,7 +5,8 @@
 			<button
 				v-for="(image, index) in this.images"
 				:key="index"
-				class="btn col-2 flex-grow-1"
+				:class="{ activeImg: index === 0 }"
+				class="thumbnail btn flex-grow-1"
 				@click="thumbClick($event, index)"
 			>
 				<img :src="`assets/products/${image}`" class="w-100 rounded" />
@@ -52,6 +53,11 @@
 <style scoped>
 	nav {
 		overflow-x: scroll;
+	}
+
+	.thumbnail {
+		min-width: 16%;
+		max-width: 20%;
 	}
 
 	.activeImg {
