@@ -11,4 +11,4 @@
 ### Kod, filer, kommentarer & commits
 
 -   Skrivs på engelska
--   Tydliga
+-   Kortfattade och tydliga
