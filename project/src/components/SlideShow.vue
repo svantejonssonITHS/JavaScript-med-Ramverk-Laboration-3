@@ -6,7 +6,7 @@
 				v-for="(image, index) in this.images"
 				:key="index"
 				:class="{ activeImg: index === 0 }"
-				class="thumbnail btn flex-grow-1"
+				class="thumbnail btn flex-grow-1 col-2"
 				@click="thumbClick($event, index)"
 			>
 				<img :src="`assets/products/${image}`" class="w-100 rounded" />
@@ -56,10 +56,8 @@
 	}
 
 	.thumbnail {
-		min-width: 16%;
-		max-width: 20%;
+		max-width: 125px;
 	}
-
 	.activeImg {
 		filter: brightness(75%);
 	}
