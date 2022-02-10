@@ -26,8 +26,11 @@
 		},
 		methods: {
 			async getProduct() {
+				// A fetch for to our JSON file is made
 				const response = await fetch('/products.json');
+				// The response json is saved temporary
 				const results = await response.json();
+				// The one product that matches the router param is saved
 				this.product = results.find((o) => o.id === this.$route.params.id);
 			},
 			addToCart(productID) {
