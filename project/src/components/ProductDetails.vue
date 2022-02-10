@@ -26,9 +26,7 @@
 				>{{ stock }} <span v-if="fewInStock">(Få kvar)</span></span
 			>
 		</p>
-		<section class="d-flex justify-content-center my-5">
-			<button class="btn btn-primary col-4 py-3">Lägg till i varukorgen</button>
-		</section>
+		<button class="btn btn-primary col-4 py-3 my-5 fw-bold">Lägg till i varukorgen</button>
 	</section>
 </template>
 

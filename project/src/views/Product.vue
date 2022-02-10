@@ -2,7 +2,7 @@
 	<article v-if="product" class="d-flex flex-column align-items-center flex-lg-row align-items-lg-start w-80 m-auto">
 		<SlideShow class="w-80 w-lg-40" :images="product.images" />
 		<ProductDetails
-			class="w-100 w-lg-60"
+			class="w-100 w-lg-60 p-2"
 			:title="product.title"
 			:category="product.category"
 			:description="product.description"
