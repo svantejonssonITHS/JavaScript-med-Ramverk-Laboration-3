@@ -8,6 +8,7 @@
 			:description="product.description"
 			:price="product.price"
 			:stock="product.stock"
+			@add-to-cart-clicked="addToCart(product.id)"
 		/>
 	</article>
 </template>
@@ -28,6 +29,31 @@
 				const response = await fetch('/products.json');
 				const results = await response.json();
 				this.product = results.find((o) => o.id === this.$route.params.id);
+			},
+			addToCart(productID) {
+				// Cart item
+				let product = {
+					id: productID,
+					amount: 1
+				};
+
+				// Retrieves cart from localStorage if it exists
+				const cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+
+				// Looks for the current product in the cart
+				let inCartIndex = cart.findIndex((o) => o.id === productID);
+
+				if (inCartIndex != -1) {
+					// The product already is in the cart, the amount is increased by 1
+					product.amount = cart[inCartIndex].amount + 1;
+					cart[inCartIndex] = product;
+				} else {
+					// The product is added to the cart with a start amount of 1
+					cart.push(product);
+				}
+
+				// The updated cart is saved to localStorage
+				localStorage.setItem('cart', JSON.stringify(cart));
 			}
 		},
 		async created() {
