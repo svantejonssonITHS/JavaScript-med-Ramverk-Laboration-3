@@ -1,3 +1,11 @@
+<script>
+	import Filter from './Filter.vue';
+	export default {
+		components: {
+			Filter
+		}
+	};
+</script>
 <style lang="scss" scoped>
 	$gold-background: radial-gradient(
 			ellipse farthest-corner at right bottom,
@@ -50,11 +58,8 @@
 				<router-link to="/about" class="nav-item nav-link">Våra produkter</router-link>
 				<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
 			</div>
+			<Filter />
 
-			<form class="form-inline">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-				<button class="btn btn-dark" type="submit">Search</button>
-			</form>
 			<div class="navbar-nav">
 				<router-link to="/" class="nav-item nav-link"><i class="fa fa-user-plus" id="user"></i></router-link>
 				<router-link to="/" class="nav-item nav-link"
