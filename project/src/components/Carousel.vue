@@ -1,5 +1,5 @@
 <template>
-	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+	<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img
@@ -72,6 +72,9 @@
 	</div>
 </template>
 <style lang="scss">
+	.carousel-inner img {
+		margin: auto;
+	}
 	img {
 		max-width: 50%;
 	}
