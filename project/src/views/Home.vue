@@ -1,27 +1,22 @@
 <template>
-	<div class="projects">
-		<Carousel
-			v-for="project in projects"
-			:key="project.id"
-			:title="project.title"
-			:image="`@/public/${products.images}`"
-			:desc="project.desc"
-		/>
-	</div>
+	<h1>What's new?</h1>
+
+	<section id="firstSection">
+		<h2>About our company</h2>
+		<p>Our history</p>
+	</section>
 </template>
 
-<script>
-	import Carousel from '@/components/Carousel.vue';
-	import JsonProjects from '@/products.json';
-	export default {
-		name: 'Projects',
-		components: {
-			Carousel
-		},
-		data: function () {
-			return {
-				projects: JsonProjects
-			};
-		}
-	};
-</script>
+<style scoped>
+	h2 {
+		color: white;
+	}
+	p {
+		color: white;
+	}
+	#firstSection {
+		width: 100%;
+		background: black;
+		height: 100px;
+	}
+</style>

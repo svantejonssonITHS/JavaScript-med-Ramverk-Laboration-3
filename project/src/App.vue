@@ -3,7 +3,6 @@
 	import HeaderImage from './components/HeaderImage.vue';
 	import FooterSection from './components/FooterSection.vue';
 	import Carousel from './components/Carousel.vue';
-
 	export default {
 		components: {
 			NavBar,
@@ -21,7 +20,6 @@
 	</nav>
 	<Carousel> </Carousel>
 	<RouterView />
-	<section />
 	<footer>
 		<FooterSection />
 	</footer>
