@@ -17,7 +17,9 @@
 		<HeaderImage />
 		<NavBar />
 	</nav>
+
 	<RouterView />
+	<section />
 	<footer>
 		<FooterSection />
 	</footer>
