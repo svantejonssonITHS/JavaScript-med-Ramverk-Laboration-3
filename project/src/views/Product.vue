@@ -1,8 +1,11 @@
 <template>
-	<article v-if="product" class="d-flex flex-column align-items-center flex-lg-row align-items-lg-start w-80 m-auto">
-		<SlideShow class="w-80 w-lg-40" :images="product.images" />
+	<article
+		v-if="product"
+		class="row col-12 col-lg-10 m-auto d-flex flex-column align-items-center flex-lg-row align-items-lg-start"
+	>
+		<SlideShow class="col-10 col-lg-4" :images="product.images" />
 		<ProductDetails
-			class="w-100 w-lg-60 p-2"
+			class="col-12 col-lg-6 p-2"
 			:title="product.title"
 			:category="product.category"
 			:description="product.description"
@@ -64,15 +67,4 @@
 		}
 	};
 </script>
-<style scoped>
-	.w-80 {
-		width: 80%;
-	}
-	.w-60 {
-		width: 60%;
-	}
-
-	.w-40 {
-		width: 40%;
-	}
-</style>
+<style scoped></style>
