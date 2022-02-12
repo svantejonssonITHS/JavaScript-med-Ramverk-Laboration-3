@@ -29,7 +29,7 @@
 		},
 		methods: {
 			async getProduct() {
-				// A fetch for to our JSON file is made
+				// A fetch to our JSON file is made
 				const response = await fetch('/products.json');
 				// The response json is saved temporary
 				const results = await response.json();
@@ -40,10 +40,7 @@
 				// Cart item
 				let product = {
 					id: productID,
-					name: this.product.title,
-					imgUrl: this.product.images[0],
-					amount: 1,
-					price: this.product.price
+					amount: 1
 				};
 
 				// Retrieves cart from localStorage if it exists
