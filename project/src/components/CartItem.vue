@@ -1,10 +1,10 @@
 <template>
-	<router-link to="/">
+	<router-link :to="`/product/${id}`">
 		<section>
-			<img src="" />
-			<h3>Namn</h3>
-			<section>amount</section>
-			<p>pris</p>
+			<img :src="`assets/products/${imgUrl}`" />
+			<h3>{{ name }}</h3>
+			<section>{{ amount }}</section>
+			<p>{{ price }}</p>
 		</section>
 	</router-link>
 </template>
