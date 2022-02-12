@@ -3,10 +3,13 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img
-					src="../../assets/products/032cbc00-e00c-46b5-8a37-88ac7bd66d96/0.jpg"
+					src="../../assets/products/681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0/0.jpg"
 					class="d-block w-100"
 					alt="watch"
 				/>
+				<div class="carousel-caption d-md-block">
+					<h1>Klockor</h1>
+				</div>
 			</div>
 			<div class="carousel-item">
 				<img
@@ -14,27 +17,39 @@
 					class="d-block w-100"
 					alt="sun glasses"
 				/>
+				<div class="carousel-caption d-md-block">
+					<h1>Solglasögon</h1>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img
+					src="../../assets/products/f357fc33-1d11-498d-8e32-b9d7cde2461d/0.jpg"
+					class="d-block w-100"
+					alt="necklace"
+				/>
+				<div class="carousel-caption d-md-block">
+					<h1>Halsband</h1>
+				</div>
 			</div>
 			<div class="carousel-item">
 				<img
 					src="../../assets/products/2029ce36-b763-4856-8a6b-dc79d2f0a8c6/0.jpg"
 					class="d-block w-100"
-					alt="wallet brown"
+					alt="wallet"
 				/>
+				<div class="carousel-caption d-md-block">
+					<h1>Plånböcker</h1>
+				</div>
 			</div>
 			<div class="carousel-item">
 				<img
-					src="../../assets/products/23a1cdad-9c66-49ba-aacf-01e43c9ce869/0.jpg"
+					src="../../assets/products/d8907f9d-af50-49fe-afcc-1cd394aba056/0.jpg"
 					class="d-block w-100"
-					alt="wallet black"
+					alt="bracelet"
 				/>
-			</div>
-			<div class="carousel-item">
-				<img
-					src="../../assets/products/4ab4db67-9614-4908-b563-63cf42585749/0.jpg"
-					class="d-block w-100"
-					alt="watch black"
-				/>
+				<div class="carousel-caption d-md-block">
+					<h1>Armband</h1>
+				</div>
 			</div>
 			<div class="carousel-item">
 				<img
@@ -42,13 +57,9 @@
 					class="d-block w-100"
 					alt="earrings"
 				/>
-			</div>
-			<div class="carousel-item">
-				<img
-					src="../../assets/products/681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0/0.jpg"
-					class="d-block w-100"
-					alt="watch on arm"
-				/>
+				<div class="carousel-caption d-md-block">
+					<h1>Örhängen</h1>
+				</div>
 			</div>
 		</div>
 		<button
@@ -74,6 +85,10 @@
 <style lang="scss">
 	.carousel-inner img {
 		margin: auto;
+	}
+	h1 {
+		background-color: white;
+		opacity: 0.5;
 	}
 	img {
 		max-width: 50%;
