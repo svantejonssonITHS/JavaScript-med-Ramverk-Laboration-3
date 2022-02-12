@@ -40,7 +40,10 @@
 				// Cart item
 				let product = {
 					id: productID,
-					amount: 1
+					name: this.product.title,
+					imgUrl: this.product.images[0],
+					amount: 1,
+					price: this.product.price
 				};
 
 				// Retrieves cart from localStorage if it exists
