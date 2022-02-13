@@ -1,4 +1,4 @@
-/*
+/**
  * @author Linus Romland, Svante Jonsson
  * @description This program adds a product to the "database".
  * Please do not touch this file!
