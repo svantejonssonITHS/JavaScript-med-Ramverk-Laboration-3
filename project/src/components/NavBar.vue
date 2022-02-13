@@ -1,3 +1,12 @@
+<script>
+	import Filter from './Filter.vue';
+	export default {
+		components: {
+			Filter
+		}
+	};
+</script>
+
 <template>
 	<div id="nav" class="d-flex justify-content-evenly">
 		<nav class="navbar navbar-expand-lg navbar-light">
@@ -19,11 +28,7 @@
 						<router-link to="/categories" class="nav-item nav-link">Produkter</router-link>
 						<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
 					</div>
-
-					<form class="d-flex">
-						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-						<button class="btn btn-dark" type="submit">Search</button>
-					</form>
+					<Filter />
 					<router-link to="/" class="nav-item nav-link"
 						><i class="fa fa-user-plus" id="user"></i
 					></router-link>
