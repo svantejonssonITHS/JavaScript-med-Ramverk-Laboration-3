@@ -1,8 +1,8 @@
 <template>
-	<router-link :to="`/product/${id}`">
-		<section>
-			<img :src="`assets/products/${imgUrl}`" />
-			<h3>{{ name }}</h3>
+	<router-link :to="`/product/${id}`" class="text-decoration-none text-dark">
+		<section class="p-2 rounded d-flex align-items-center">
+			<img :src="`assets/products/${imgUrl}`" height="100" />
+			<h3 class="text-underline-hover">{{ name }}</h3>
 			<section>{{ amount }}</section>
 			<p>{{ price }}</p>
 		</section>
@@ -37,4 +37,12 @@
 	};
 </script>
 
-<style scoped></style>
+<style scoped>
+	.text-underline-hover {
+		text-decoration: none;
+	}
+
+	.text-underline-hover:hover {
+		text-decoration: underline;
+	}
+</style>
