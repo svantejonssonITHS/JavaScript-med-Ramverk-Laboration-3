@@ -1,6 +1,6 @@
 <template>
-	<article>
-		<h2>Din kundvagn</h2>
+	<article class="row col-12 col-lg-10 m-auto d-flex flex-column align-items-center flex-lg-row align-items-lg-start">
+		<h2 class="fw-bold">Din kundvagn</h2>
 		<ul v-if="cart && products">
 			<CartItem
 				v-for="product in products"
