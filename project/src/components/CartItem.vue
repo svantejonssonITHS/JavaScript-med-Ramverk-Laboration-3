@@ -13,7 +13,7 @@
 				<input type="number" class="form-control" :value="amount" />
 				<button type="button" class="btn btn-success">+</button>
 			</section>
-			<section class="d-flex justify-content-end align-items-center">
+			<section class="col-3 d-flex justify-content-end align-items-center">
 				<p class="mb-0 me-5 fw-bold">{{ price }} KR</p>
 				<button class="btn fw-bold">X</button>
 			</section>
