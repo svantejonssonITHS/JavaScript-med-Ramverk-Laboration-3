@@ -5,7 +5,7 @@
 		<img src="../../assets/acc4.jpg" alt="accessories" id="imageacc" class="img-fluid" />
 	</div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 	#header {
 		background-color: black;
 		max-height: 45%;
