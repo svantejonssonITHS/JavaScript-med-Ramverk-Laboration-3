@@ -1,6 +1,6 @@
 <template>
 	<article class="row col-12 col-lg-10 m-auto d-flex flex-column align-items-center flex-lg-row align-items-lg-start">
-		<h2 class="fw-bold">Din kundvagn</h2>
+		<h2 class="fw-bold m-0 p-0 my-3">Din kundvagn</h2>
 		<ul v-if="cart && products">
 			<CartItem
 				v-for="product in products"
@@ -13,7 +13,8 @@
 			/>
 		</ul>
 		<p v-else>Din kundvagn är tom!</p>
-		<button>Till kassan</button>
+		<h3 class="text-end m-0 p-0 my-3">Totalt värde: {{ cartValue }} SEK</h3>
+		<button class="ms-auto btn btn-secondary col-4 col-lg-2 m-0 my-2 py-3 fw-bold">Till kassan</button>
 	</article>
 </template>
 <script>
@@ -48,6 +49,15 @@
 					this.products = null;
 					localStorage.setItem('cart', JSON.stringify([]));
 				}
+			}
+		},
+		computed: {
+			cartValue() {
+				let cartValue = 0;
+				this.products.forEach((product) => {
+					cartValue += product.price * product.amount;
+				});
+				return Intl.NumberFormat().format(cartValue);
 			}
 		},
 		created() {
