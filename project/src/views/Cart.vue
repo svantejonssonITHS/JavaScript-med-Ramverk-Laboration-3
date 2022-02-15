@@ -11,7 +11,8 @@
 				:amount="product.amount"
 				:stock="product.stock"
 				:price="product.price"
-				@amountChanged="updateCartItem"
+				@amount-changed="updateCartItem"
+				@remove-cart-item="removeCartItem"
 				:class="{
 					'rounded-top': index == 0,
 					'border-top-0': index != 0,
@@ -19,7 +20,6 @@
 				}"
 			/>
 		</ul>
-		<p v-else>Din kundvagn är tom!</p>
 		<h3 class="text-end m-0 p-0 my-3">Totalt värde: {{ cartValue }} SEK</h3>
 		<button class="ms-auto btn btn-secondary col-4 col-lg-2 m-0 my-2 py-3 fw-bold">Till kassan</button>
 	</article>
@@ -51,16 +51,18 @@
 						this.products.push(results[productIndex]);
 					}
 				});
-				// If no products in the cart exist in the database, the products array sets to null and the cart in localStorage is reset
-				if (this.products.length < 1) {
-					this.products = null;
-					localStorage.setItem('cart', JSON.stringify([]));
-				}
 			},
 			updateCartItem(id, amount) {
 				const updateIndex = this.cart.findIndex((productInCart) => productInCart.id === id);
 				this.products[updateIndex].amount = amount;
 				this.cart[updateIndex].amount = amount;
+
+				localStorage.setItem('cart', JSON.stringify(this.cart));
+			},
+			removeCartItem(id) {
+				const updateIndex = this.cart.findIndex((productInCart) => productInCart.id === id);
+				this.products.splice(updateIndex, 1);
+				this.cart.splice(updateIndex, 1);
 
 				localStorage.setItem('cart', JSON.stringify(this.cart));
 			}
@@ -72,6 +74,16 @@
 					cartValue += product.price * product.amount;
 				});
 				return Intl.NumberFormat().format(cartValue);
+			}
+		},
+		watch: {
+			products() {
+				// If the products array is empty, the cart should also be empty
+				if (this.products.length == 0) {
+					this.products = null;
+					this.cart = [];
+				}
+				localStorage.setItem('cart', JSON.stringify(this.cart));
 			}
 		},
 		created() {

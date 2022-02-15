@@ -15,7 +15,7 @@
 			</section>
 			<section class="col-3 d-flex justify-content-end align-items-center">
 				<p class="mb-0 me-5 fw-bold">{{ price }} KR</p>
-				<button class="btn fw-bold">X</button>
+				<button class="btn fw-bold" @click="removeItem">X</button>
 			</section>
 		</section>
 	</section>
@@ -50,7 +50,7 @@
 				required: true
 			}
 		},
-		emits: ['amountChanged'],
+		emits: ['amountChanged', 'removeCartItem'],
 		data() {
 			return {
 				amountDisplayed: this.amount
@@ -78,6 +78,9 @@
 				} else {
 					decrease.disabled = false;
 				}
+			},
+			removeItem() {
+				this.$emit('removeCartItem', this.id);
 			}
 		},
 		computed: {
