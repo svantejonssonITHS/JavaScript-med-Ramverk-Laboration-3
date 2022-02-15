@@ -50,6 +50,7 @@
 				required: true
 			}
 		},
+		emits: ['amountChanged'],
 		data() {
 			return {
 				amountDisplayed: this.amount
@@ -89,6 +90,7 @@
 				}
 
 				// Emit to function
+				this.$emit('amountChanged', this.id, this.amountDisplayed);
 			}
 		}
 	};
