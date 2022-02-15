@@ -60,18 +60,8 @@
 			// direction, a value, eiter -1 or 1
 			changeAmount(direction = 0) {
 				this.amountDisplayed += direction;
-			}
-		},
-		computed: {
-			increaseID() {
-				return `increase-${this.id}`;
 			},
-			decreaseID() {
-				return `decrease-${this.id}`;
-			}
-		},
-		watch: {
-			amountDisplayed() {
+			allowButtonClick() {
 				const increase = document.querySelector(`#${this.increaseID}`);
 				const decrease = document.querySelector(`#${this.decreaseID}`);
 
@@ -88,10 +78,26 @@
 				} else {
 					decrease.disabled = false;
 				}
+			}
+		},
+		computed: {
+			increaseID() {
+				return `increase-${this.id}`;
+			},
+			decreaseID() {
+				return `decrease-${this.id}`;
+			}
+		},
+		watch: {
+			amountDisplayed() {
+				this.allowButtonClick();
 
 				// Emit to function
 				this.$emit('amountChanged', this.id, this.amountDisplayed);
 			}
+		},
+		mounted() {
+			this.allowButtonClick();
 		}
 	};
 </script>
