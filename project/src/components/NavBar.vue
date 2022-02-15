@@ -25,8 +25,23 @@
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 					<div class="navbar-nav mr-auto mb-2 mb-lg-0">
 						<router-link to="/" class="nav-item nav-link">Hem</router-link>
-						<router-link to="/categories" class="nav-item nav-link">Kategorier</router-link>
-						<router-link to="/allProducts" class="nav-item nav-link">Alla produkter</router-link>
+						<i class="nav-item dropdown"
+							><a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Vårt sortiment
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<router-link to="/categories" class="nav-item nav-link">Kategorier</router-link>
+								<router-link to="/allProducts" class="nav-item nav-link">Alla produkter</router-link>
+							</div>
+						</i>
+
 						<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
 					</div>
 					<Filter />

@@ -14,7 +14,7 @@
 	<img src="../../assets/products/c0ddf106-e306-463d-9736-4a652466f464/0.jpg" />
 </template>
 
-<script>
+<!--<script>
 	fetch('https://request.in/api/categories', {
 		method: 'POST',
 		headers: { 'Content-Type': 'product/json' },
@@ -25,6 +25,6 @@
 		})
 		.then((data) => console.log(data))
 		.catch((error) => console.log('ERROR'));
-</script>
+</script>-->
 
 <style></style>

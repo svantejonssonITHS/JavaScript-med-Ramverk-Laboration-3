@@ -15,18 +15,21 @@
 	};
 </script>
 <template>
-	<div class="row">
-		<div class="col-md-6">
-			<div class="card" v-for="product in products" :key="product.id" style="width: 18rem">
-				<img :src="'assets/products/' + product.images[0]" class="card-img-top" alt="..." />
-				<div class="card-body">
-					<h5 class="card-title">{{ product.title }}</h5>
-					<p class="card-text">
-						{{ product.description }}
-					</p>
-					<a href="#" class="btn btn-dark">Info</a>
-				</div>
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		<div class="card" v-for="product in products" :key="product.id">
+			<img :src="'assets/products/' + product.images[0]" class="card-img-top" alt="..." />
+			<div class="card-body">
+				<h5 class="card-title">{{ product.title }}</h5>
+				<p class="card-text">
+					{{ product.description }}
+				</p>
+				<a href="#" class="btn btn-dark">Info</a>
 			</div>
 		</div>
 	</div>
 </template>
+<style lang="scss">
+	.card {
+		margin-bottom: 1em;
+	}
+</style>
