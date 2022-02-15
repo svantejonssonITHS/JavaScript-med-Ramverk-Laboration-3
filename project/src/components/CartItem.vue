@@ -1,5 +1,5 @@
 <template>
-	<section class="p-2 rounded border row align-items-center">
+	<section class="p-2 border row align-items-center">
 		<section class="col-1">
 			<img :src="`assets/products/${imgUrl}`" width="100" />
 		</section>

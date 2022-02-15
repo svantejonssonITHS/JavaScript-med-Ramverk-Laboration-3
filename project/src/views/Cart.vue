@@ -3,8 +3,8 @@
 		<h2 class="fw-bold m-0 p-0 my-3">Din kundvagn</h2>
 		<ul v-if="cart && products">
 			<CartItem
-				v-for="product in products"
-				:key="product.id"
+				v-for="(product, index) in products"
+				:key="index"
 				:id="product.id"
 				:name="product.title"
 				:imgUrl="product.images[0]"
@@ -12,6 +12,11 @@
 				:stock="product.stock"
 				:price="product.price"
 				@amountChanged="updateCartItem"
+				:class="{
+					'rounded-top': index == 0,
+					'border-top-0': index != 0,
+					'rounded-bottom': index == this.products.length - 1
+				}"
 			/>
 		</ul>
 		<p v-else>Din kundvagn är tom!</p>
