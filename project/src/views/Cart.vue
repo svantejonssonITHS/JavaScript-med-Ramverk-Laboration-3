@@ -11,6 +11,7 @@
 				:amount="product.amount"
 				:stock="product.stock"
 				:price="product.price"
+				@amountChanged="updateCartItem"
 			/>
 		</ul>
 		<p v-else>Din kundvagn är tom!</p>
@@ -50,6 +51,13 @@
 					this.products = null;
 					localStorage.setItem('cart', JSON.stringify([]));
 				}
+			},
+			updateCartItem(id, amount) {
+				const updateIndex = this.cart.findIndex((productInCart) => productInCart.id === id);
+				this.products[updateIndex].amount = amount;
+				this.cart[updateIndex].amount = amount;
+
+				localStorage.setItem('cart', JSON.stringify(this.cart));
 			}
 		},
 		computed: {
