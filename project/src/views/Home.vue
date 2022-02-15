@@ -5,7 +5,7 @@
 		<h2>About our company</h2>
 		<p>Our history</p>
 	</section>
-	<ImageFetch :images="products[0].images[0]" />
+	<ImageFetch v-if="products" :images="products[0].images[0]" />
 </template>
 
 <script>
