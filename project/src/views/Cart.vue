@@ -9,6 +9,7 @@
 				:name="product.title"
 				:imgUrl="product.images[0]"
 				:amount="product.amount"
+				:stock="product.stock"
 				:price="product.price"
 			/>
 		</ul>

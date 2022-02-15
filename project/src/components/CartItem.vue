@@ -9,9 +9,9 @@
 
 		<section class="col d-flex justify-content-end align-items-center">
 			<section class="input-group me-5">
-				<button type="button" class="btn btn-danger">-</button>
-				<input type="number" class="form-control" :value="amount" />
-				<button type="button" class="btn btn-success">+</button>
+				<button type="button" class="btn btn-danger" :id="`decrease-${this.id}`">-</button>
+				<input type="number" class="form-control" v-model="amountDisplayed" />
+				<button type="button" class="btn btn-success" :id="increaseID">+</button>
 			</section>
 			<section class="col-3 d-flex justify-content-end align-items-center">
 				<p class="mb-0 me-5 fw-bold">{{ price }} KR</p>
@@ -41,9 +41,48 @@
 				type: Number,
 				required: true
 			},
+			stock: {
+				type: Number,
+				required: true
+			},
 			price: {
 				type: Number,
 				required: true
+			}
+		},
+		data() {
+			return {
+				amountDisplayed: this.amount
+			};
+		},
+		computed: {
+			increaseID() {
+				return `increase-${this.id}`;
+			},
+			decreaseID() {
+				return `decrease-${this.id}`;
+			}
+		},
+		watch: {
+			amountDisplayed() {
+				const increase = document.querySelector(`#${this.increaseID}`);
+				const decrease = document.querySelector(`#${this.decreaseID}`);
+
+				if (this.amountDisplayed >= this.stock) {
+					increase.disabled = true;
+					this.amountDisplayed = this.stock;
+				} else {
+					increase.disabled = false;
+				}
+
+				if (this.amountDisplayed <= 1) {
+					decrease.disabled = true;
+					this.amountDisplayed = 1;
+				} else {
+					decrease.disabled = false;
+				}
+
+				// Emit to function
 			}
 		}
 	};
