@@ -23,6 +23,7 @@
 				<p class="card-text">
 					{{ product.description }}
 				</p>
+				<h5>{{ product.price }} SEK</h5>
 				<a href="#" class="btn btn-dark">Info</a>
 			</div>
 		</div>
@@ -30,6 +31,7 @@
 </template>
 <style lang="scss">
 	.card {
-		margin-bottom: 1em;
+		margin: 1em 2em;
+		width: 20em;
 	}
 </style>
