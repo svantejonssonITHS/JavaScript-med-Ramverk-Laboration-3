@@ -82,7 +82,7 @@
 		</button>
 	</div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 	.carousel-inner img {
 		margin: auto;
 	}

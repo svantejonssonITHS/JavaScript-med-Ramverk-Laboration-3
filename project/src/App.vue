@@ -2,7 +2,6 @@
 	import NavBar from './components/NavBar.vue';
 	import HeaderImage from './components/HeaderImage.vue';
 	import FooterSection from './components/FooterSection.vue';
-
 	export default {
 		components: {
 			NavBar,
@@ -19,7 +18,6 @@
 	</nav>
 
 	<RouterView />
-	<section />
 	<footer>
 		<FooterSection />
 	</footer>
