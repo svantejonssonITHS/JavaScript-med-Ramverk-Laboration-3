@@ -26,10 +26,7 @@
 				>{{ stock }} <span v-if="fewInStock">(Få kvar)</span></span
 			>
 		</p>
-		<button
-			class="btn btn-secondary col-8 col-lg-4 mx-auto mx-lg-0 my-5 d-block py-3 fw-bold"
-			@click="addToCartClicked"
-		>
+		<button class="btn btn-secondary col-8 col-lg-4 mx-auto mx-lg-0 my-5 d-block py-3 fw-bold" @click="addToCartClicked">
 			Lägg till i varukorgen
 		</button>
 	</section>

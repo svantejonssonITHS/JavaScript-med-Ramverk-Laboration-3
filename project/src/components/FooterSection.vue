@@ -28,10 +28,9 @@
 						<div class="col-lg-4 col-md-6">
 							<h5 class="text-white mb-3">Newsletter</h5>
 							<p class="small text-muted">
-								Registrera dig för vårt nyhetsbrev och håll dig uppdaterad på nyheter, erbjudanden och
-								alla guldkorn! Genom att registrera dig samtycker du till att få nyhetsbrev och
-								marknadsföring från Accessories by five.se. Du kan när som helst avsluta
-								prenumerationen..
+								Registrera dig för vårt nyhetsbrev och håll dig uppdaterad på nyheter, erbjudanden och alla
+								guldkorn! Genom att registrera dig samtycker du till att få nyhetsbrev och marknadsföring från
+								Accessories by five.se. Du kan när som helst avsluta prenumerationen..
 							</p>
 							<form action="#">
 								<div class="input-group mb-3">

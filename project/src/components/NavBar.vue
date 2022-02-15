@@ -42,15 +42,11 @@
 							</div>
 						</i>
 
-						<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
+						<router-link to="/" class="nav-item nav-link">Kontakt</router-link>
 					</div>
 					<Filter />
-					<router-link to="/" class="nav-item nav-link"
-						><i class="fa fa-user-plus" id="user"></i
-					></router-link>
-					<router-link to="/" class="nav-item nav-link"
-						><i class="fa fa-shopping-cart" id="cart"></i
-					></router-link>
+					<router-link to="/" class="nav-item nav-link"><i class="fa fa-user-plus" id="user"></i></router-link>
+					<router-link to="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart" id="cart"></i></router-link>
 				</div>
 			</div>
 		</nav>
@@ -65,14 +61,7 @@
 			#8a6e2f 40%,
 			transparent 80%
 		),
-		radial-gradient(
-			ellipse farthest-corner at left top,
-			#ffffff 0%,
-			#ffffac 8%,
-			#d1b464 25%,
-			#5d4a1f 62.5%,
-			#5d4a1f 100%
-		);
+		radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 	button {
 		margin-left: 10px;
 	}
