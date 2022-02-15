@@ -57,6 +57,7 @@
 
 	.thumbnail {
 		max-width: 125px;
+		box-shadow: none;
 	}
 
 	.thumbnail:hover {
