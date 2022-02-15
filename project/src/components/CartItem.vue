@@ -9,9 +9,9 @@
 
 		<section class="col d-flex justify-content-end align-items-center">
 			<section class="input-group me-5">
-				<button type="button" class="btn btn-danger" :id="`decrease-${this.id}`">-</button>
+				<button type="button" class="btn btn-danger" :id="`decrease-${this.id}`" @click="changeAmount(-1)">-</button>
 				<input type="number" class="form-control" v-model="amountDisplayed" />
-				<button type="button" class="btn btn-success" :id="increaseID">+</button>
+				<button type="button" class="btn btn-success" :id="increaseID" @click="changeAmount(1)">+</button>
 			</section>
 			<section class="col-3 d-flex justify-content-end align-items-center">
 				<p class="mb-0 me-5 fw-bold">{{ price }} KR</p>
@@ -54,6 +54,12 @@
 			return {
 				amountDisplayed: this.amount
 			};
+		},
+		methods: {
+			// direction, a value, eiter -1 or 1
+			changeAmount(direction = 0) {
+				this.amountDisplayed += direction;
+			}
 		},
 		computed: {
 			increaseID() {
