@@ -7,6 +7,6 @@
 	};
 </script>
 <template>
-	<h1>Alla produkter</h1>
+	<h1 class="display-3">Alla produkter</h1>
 	<ProductCards />
 </template>

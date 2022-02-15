@@ -81,6 +81,7 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
+	<div id="mySection"></div>
 </template>
 <style lang="scss" scoped>
 	.carousel-inner img {
@@ -92,5 +93,8 @@
 	}
 	img {
 		max-width: 50%;
+	}
+	#mySection {
+		height: 4em;
 	}
 </style>

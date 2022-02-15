@@ -1,5 +1,5 @@
 <template>
-	<h1>What's new?</h1>
+	<h1 class="display-3">What's new?</h1>
 	<Carousel />
 	<section id="firstSection">
 		<h2>About our company</h2>
