@@ -5,6 +5,14 @@
 		<h2>About our company</h2>
 		<p>Our history</p>
 	</section>
+	<div class="descript">
+		<img class="infoPic" />
+		<p>Check out our wonderful necklace beads</p>
+	</div>
+	<div class="descripti">
+		<img class="infoPic" />
+		<p>Check out our wonderful necklace beads</p>
+	</div>
 	<ImageFetch v-if="products" :images="products[0].images[0]" />
 </template>
 
@@ -13,13 +21,6 @@
 	export default {
 		components: {
 			ImageFetch
-		},
-		created() {
-			let promise = fetch('/products.json');
-
-			promise.then((response) => {
-				this.products = response.json();
-			});
 		},
 		data() {
 			return {
@@ -31,10 +32,21 @@
 </script>
 
 <style scoped>
+	.descript {
+		display: flex;
+		align-items: center;
+		margin: 5em 0 2.5em 0;
+	}
+	.descripti {
+		margin: 5em 0 2.5em 0;
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;
+	}
 	h2 {
 		color: white;
 	}
-	p {
+	#firstSection > p {
 		color: white;
 	}
 	#firstSection {

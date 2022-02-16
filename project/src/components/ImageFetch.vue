@@ -9,10 +9,11 @@
 	export default {
 		created() {
 			let promise = fetch('/products.json');
-
-			promise.then((response) => {
-				this.products = response.json();
-			});
+			promise
+				.then((response) => response.json())
+				.then(function (product) {
+					this.products = product;
+				});
 		},
 
 		data() {
