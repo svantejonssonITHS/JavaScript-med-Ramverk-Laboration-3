@@ -1,12 +1,3 @@
-<script>
-	import Filter from './Filter.vue';
-	export default {
-		components: {
-			Filter
-		}
-	};
-</script>
-
 <template>
 	<div id="nav" class="d-flex justify-content-evenly">
 		<nav class="navbar navbar-expand-lg navbar-light">
@@ -44,7 +35,7 @@
 
 						<router-link to="/" class="nav-item nav-link">Kontakt</router-link>
 					</div>
-					<Filter />
+
 					<router-link to="/" class="nav-item nav-link"><i class="fa fa-user-plus" id="user"></i></router-link>
 					<router-link to="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart" id="cart"></i></router-link>
 				</div>
