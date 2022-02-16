@@ -5,7 +5,6 @@
 		<h2>About our company</h2>
 		<p>Our history</p>
 	</section>
-
 	<ImageFetch />
 </template>
 
