@@ -22,6 +22,7 @@
 		},
 		computed: {
 			filteredList() {
+				if (!this.products) return;
 				return this.products.filter((post) => {
 					return post.title.toLowerCase().includes(this.search.toLowerCase());
 				});
@@ -45,7 +46,7 @@
 						{{ post.description }}
 					</p>
 					<h5>{{ post.price }} SEK</h5>
-					<a href="#" class="btn btn-dark">Info</a>
+					<router-link :to="`/product/${post.id}`" class="btn btn-dark">Info</router-link>
 				</div>
 			</div>
 		</div>

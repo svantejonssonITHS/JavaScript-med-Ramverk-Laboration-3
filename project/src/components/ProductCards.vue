@@ -24,7 +24,7 @@
 					{{ product.description }}
 				</p>
 				<h5>{{ product.price }} SEK</h5>
-				<a href="#" class="btn btn-dark">Info</a>
+				<router-link :to="`/product/${product.id}`" class="btn btn-dark">Info</router-link>
 			</div>
 		</div>
 	</div>
