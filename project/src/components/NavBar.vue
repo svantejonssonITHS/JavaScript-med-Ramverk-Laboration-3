@@ -1,12 +1,3 @@
-<script>
-	import Filter from './Filter.vue';
-	export default {
-		components: {
-			Filter
-		}
-	};
-</script>
-
 <template>
 	<div id="nav" class="d-flex justify-content-evenly">
 		<nav class="navbar navbar-expand-lg navbar-light">
@@ -25,16 +16,28 @@
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 					<div class="navbar-nav mr-auto mb-2 mb-lg-0">
 						<router-link to="/" class="nav-item nav-link">Hem</router-link>
-						<router-link to="/categories" class="nav-item nav-link">Produkter</router-link>
-						<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
+						<i class="nav-item dropdown"
+							><a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Vårt sortiment
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<router-link to="/categories" class="nav-item nav-link">Kategorier</router-link>
+								<router-link to="/allProducts" class="nav-item nav-link">Alla produkter</router-link>
+							</div>
+						</i>
+
+						<router-link to="/" class="nav-item nav-link">Kontakt</router-link>
 					</div>
-					<Filter />
-					<router-link to="/" class="nav-item nav-link"
-						><i class="fa fa-user-plus" id="user"></i
-					></router-link>
-					<router-link to="/" class="nav-item nav-link"
-						><i class="fa fa-shopping-cart" id="cart"></i
-					></router-link>
+
+					<router-link to="/" class="nav-item nav-link"><i class="fa fa-user-plus" id="user"></i></router-link>
+					<router-link to="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart" id="cart"></i></router-link>
 				</div>
 			</div>
 		</nav>
@@ -49,14 +52,7 @@
 			#8a6e2f 40%,
 			transparent 80%
 		),
-		radial-gradient(
-			ellipse farthest-corner at left top,
-			#ffffff 0%,
-			#ffffac 8%,
-			#d1b464 25%,
-			#5d4a1f 62.5%,
-			#5d4a1f 100%
-		);
+		radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 	button {
 		margin-left: 10px;
 	}

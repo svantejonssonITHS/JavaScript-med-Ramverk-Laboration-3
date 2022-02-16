@@ -28,10 +28,9 @@
 						<div class="col-lg-4 col-md-6">
 							<h5 class="text-white mb-3">Newsletter</h5>
 							<p class="small text-muted">
-								Registrera dig för vårt nyhetsbrev och håll dig uppdaterad på nyheter, erbjudanden och
-								alla guldkorn! Genom att registrera dig samtycker du till att få nyhetsbrev och
-								marknadsföring från Accessories by five.se. Du kan när som helst avsluta
-								prenumerationen..
+								Registrera dig för vårt nyhetsbrev och håll dig uppdaterad på nyheter, erbjudanden och alla
+								guldkorn! Genom att registrera dig samtycker du till att få nyhetsbrev och marknadsföring från
+								Accessories by five.se. Du kan när som helst avsluta prenumerationen..
 							</p>
 							<form action="#">
 								<div class="input-group mb-3">
@@ -52,75 +51,6 @@
 				</div>
 			</footer>
 		</div>
-		<!-- footer Section Begins -->
-		<section id="footer" class="footer">
-			<div class="footerBg"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-						<div class="contact-form btm-brdr">
-							<div class="form-Box">
-								<input type="text" placeholder="Name" class="b_effect" />
-							</div>
-							<div class="form-Box">
-								<input type="text" placeholder="Email" class="b_effect" />
-							</div>
-							<div class="form-Box"><textarea placeholder="Message" class="b_effect"></textarea></div>
-							<div class="form-Box">
-								<input type="submit" value="Submit" class="fill-btn" />
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-						<div class="contact-address btm-brdr">
-							<h4 class="fTitle">Contact <span>Us</span></h4>
-							<ul>
-								<li><i class="fa fa-phone" aria-hidden="true"></i> <span>0046 72 87 21 44</span></li>
-								<li>
-									<i class="fa fa-map-marker" aria-hidden="true"></i>
-									<span>Eketregatan 28 E gothenburg sweeden </span>
-								</li>
-								<li>
-									<i class="fa fa-envelope-o" aria-hidden="true"></i
-									><span>info@Accessories by five.se</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-						<div class="subscribe btm-brdr">
-							<h4 class="fTitle">Subscribe <span>Newsletter</span></h4>
-							<form>
-								<input type="text" placeholder="Example@example.com" />
-								<button type="button" class="fill-btn">Subscribe</button>
-							</form>
-						</div>
-						<div class="social-icons">
-							<h4 class="fTitle">Social <span>News</span></h4>
-							<ul>
-								<li>
-									<a href="'#" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
-								</li>
-								<li>
-									<a href="'#" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
-								</li>
-								<li>
-									<a href="'#" target="_blank">
-										<i class="fa fa-youtube-play" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="'#" target="_blank">
-										<i class="fa fa-instagram" aria-hidden="true"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- footer Section Ends -->
 
 		<p>{{ footerText }}</p>
 	</footer>

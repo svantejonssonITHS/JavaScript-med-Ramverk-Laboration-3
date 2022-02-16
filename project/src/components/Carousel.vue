@@ -2,11 +2,7 @@
 	<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img
-					src="../../assets/products/681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0/0.jpg"
-					class="d-block w-100"
-					alt="watch"
-				/>
+				<img src="../../assets/products/681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0/0.jpg" class="d-block w-100" alt="watch" />
 				<div class="carousel-caption d-md-block">
 					<h1>Klockor</h1>
 				</div>
@@ -32,11 +28,7 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img
-					src="../../assets/products/2029ce36-b763-4856-8a6b-dc79d2f0a8c6/0.jpg"
-					class="d-block w-100"
-					alt="wallet"
-				/>
+				<img src="../../assets/products/2029ce36-b763-4856-8a6b-dc79d2f0a8c6/0.jpg" class="d-block w-100" alt="wallet" />
 				<div class="carousel-caption d-md-block">
 					<h1>Plånböcker</h1>
 				</div>
@@ -62,25 +54,16 @@
 				</div>
 			</div>
 		</div>
-		<button
-			class="carousel-control-prev"
-			type="button"
-			data-bs-target="#carouselExampleControls"
-			data-bs-slide="prev"
-		>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
-		<button
-			class="carousel-control-next"
-			type="button"
-			data-bs-target="#carouselExampleControls"
-			data-bs-slide="next"
-		>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
+	<div id="mySection"></div>
 </template>
 <style lang="scss" scoped>
 	.carousel-inner img {
@@ -92,5 +75,8 @@
 	}
 	img {
 		max-width: 50%;
+	}
+	#mySection {
+		height: 4em;
 	}
 </style>

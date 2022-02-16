@@ -1,6 +1,6 @@
 <template>
-	<h1>What's new?</h1>
-
+	<h1 class="display-3">What's new?</h1>
+	<Carousel />
 	<section id="firstSection">
 		<h2>About our company</h2>
 		<p>Our history</p>
@@ -18,9 +18,11 @@
 
 <script>
 	import ImageFetch from '../components/ImageFetch.vue';
+	import Carousel from '../components/Carousel.vue';
 	export default {
 		components: {
-			ImageFetch
+			ImageFetch,
+			Carousel
 		},
 		data() {
 			return {
