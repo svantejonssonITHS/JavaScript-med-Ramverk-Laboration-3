@@ -5,15 +5,8 @@
 		<h2>About our company</h2>
 		<p>Our history</p>
 	</section>
-	<div class="descript">
-		<img class="infoPic" />
-		<p>Check out our wonderful necklace beads</p>
-	</div>
-	<div class="descripti">
-		<img class="infoPic" />
-		<p>Check out our wonderful necklace beads</p>
-	</div>
-	<ImageFetch v-if="products" :images="products[0].images[0]" />
+	<ImageFetch v-if="products" :images="`src/assets/${products.images}`" />
+	<ImageFetch />
 </template>
 
 <script>
@@ -38,6 +31,7 @@
 		display: flex;
 		align-items: center;
 		margin: 5em 0 2.5em 0;
+		flex-wrap: wrap;
 	}
 	.descripti {
 		margin: 5em 0 2.5em 0;
