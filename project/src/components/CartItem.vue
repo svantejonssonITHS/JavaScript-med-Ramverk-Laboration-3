@@ -1,20 +1,20 @@
 <template>
-	<section class="p-2 border row align-items-center">
-		<section class="col-1">
-			<img :src="`assets/products/${imgUrl}`" width="100" />
+	<section class="p-2 border row align-items-md-center">
+		<section class="col col-md-1">
+			<img :src="`assets/products/${imgUrl}`" width="100" class="d-block" />
 		</section>
-		<router-link :to="`/product/${id}`" class="text-decoration-none text-dark col-5 m-2 px-0">
+		<router-link :to="`/product/${id}`" class="text-decoration-none text-dark col col-md-5 m-2 px-0">
 			<h3 class="text-underline-hover mb-0">{{ name }}</h3>
 		</router-link>
 
-		<section class="col d-flex justify-content-end align-items-center">
+		<section class="col d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-start">
 			<section class="input-group me-5">
 				<button type="button" class="btn btn-danger" :id="`decrease-${this.id}`" @click="changeAmount(-1)">-</button>
 				<input type="number" class="form-control" v-model="amountDisplayed" />
 				<button type="button" class="btn btn-success" :id="increaseID" @click="changeAmount(1)">+</button>
 			</section>
-			<section class="col-3 d-flex justify-content-end align-items-center">
-				<p class="mb-0 me-5 fw-bold">{{ price }} KR</p>
+			<section class="col-12 col-md-3 d-flex flex-row justify-content-between align-items-center">
+				<p class="mb-0 me-md-5 fw-bold">{{ price }} KR</p>
 				<button class="btn fw-bold" @click="removeItem">X</button>
 			</section>
 		</section>
