@@ -1,6 +1,12 @@
 <template>
 	<div class="descript">
-		<img :src="images" class="infoPic" />
+		<img
+			v-for="image in products"
+			:key="image.id"
+			:src="'assets/products/' + product.images[0]"
+			class="card-img-top"
+			alt="..."
+		/>
 		<p>
 			Accesories by 5 is the world’s largest jewellery brand. The company designs, manufactures and markets hand-finished
 			jewellery made from high-quality materials at affordable prices. A5 jewellery is sold in more than 100 countries
@@ -19,23 +25,18 @@
 	}
 </style>
 <script>
+	import axios from 'axios';
+
 	export default {
 		created() {
-			let promise = fetch('/products.json');
-			promise
-				.then((response) => response.json())
-				.then(function (result) {
-					this.products = result;
-				});
+			axios.get('/products.json').then((response) => (this.products = response.data));
+			console.log(this.products);
 		},
 
 		data() {
 			return {
 				products: ''
 			};
-		},
-		props: {
-			images: { type: String, required: true }
 		}
 	};
 </script>
