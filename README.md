@@ -14,6 +14,10 @@ För information om vilka regler bidrag till projektet som ska följa, tryck [h�
 
 För information om våran `Definition of Done`, tryck [här](definitionOfDone.md#definition-of-done).
 
+## Processförbättringar
+
+För information om våra regler för en bättre arbetsprocess i sprint 2, tryck [här](processImprovements.md#processförbättringar).
+
 ## Gruppmedlemmar
 
 -   Svante Jonsson
