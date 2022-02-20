@@ -4,7 +4,7 @@
 			<div class="carousel-item active">
 				<img src="../../assets/products/681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0/0.jpg" class="d-block w-100" alt="watch" />
 				<div class="carousel-caption d-md-block">
-					<h1>Klockor</h1>
+					<h1 @click="goToProductCategories('Klockor')">Klockor</h1>
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -14,7 +14,7 @@
 					alt="sun glasses"
 				/>
 				<div class="carousel-caption d-md-block">
-					<h1>Solglasögon</h1>
+					<h1 @click="goToProductCategories('Solglasögon')">Solglasögon</h1>
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -24,13 +24,13 @@
 					alt="necklace"
 				/>
 				<div class="carousel-caption d-md-block">
-					<h1>Halsband</h1>
+					<h1 @click="goToProductCategories('Halsband')">Halsband</h1>
 				</div>
 			</div>
 			<div class="carousel-item">
 				<img src="../../assets/products/2029ce36-b763-4856-8a6b-dc79d2f0a8c6/0.jpg" class="d-block w-100" alt="wallet" />
 				<div class="carousel-caption d-md-block">
-					<h1>Plånböcker</h1>
+					<h1 @click="goToProductCategories('Plånböcker')">Plånböcker</h1>
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -40,7 +40,7 @@
 					alt="bracelet"
 				/>
 				<div class="carousel-caption d-md-block">
-					<h1>Armband</h1>
+					<h1 @click="goToProductCategories('Armband')">Armband</h1>
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -50,7 +50,7 @@
 					alt="earrings"
 				/>
 				<div class="carousel-caption d-md-block">
-					<h1>Örhängen</h1>
+					<h1 @click="goToProductCategories('Örhängen')">Örhängen</h1>
 				</div>
 			</div>
 		</div>
@@ -65,6 +65,26 @@
 	</div>
 	<div id="mySection"></div>
 </template>
+<script>
+	import axios from 'axios';
+	export default {
+		created() {
+			axios.get('/products.json').then((response) => (this.products = response.data));
+			console.log(this.products);
+		},
+		data() {
+			return {
+				products: '',
+				category: ''
+			};
+		},
+		methods: {
+			goToProductCategories(category) {
+				this.$router.push('/productCategories/' + category);
+			}
+		}
+	};
+</script>
 <style lang="scss" scoped>
 	.carousel-inner img {
 		margin: auto;
