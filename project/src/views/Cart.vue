@@ -21,7 +21,10 @@
 			/>
 		</ul>
 		<h3 class="text-end m-0 p-0 my-3">Totalt värde: {{ cartValue }} SEK</h3>
-		<button class="ms-auto btn btn-secondary col-4 col-lg-2 m-0 my-2 py-3 fw-bold">Till kassan</button>
+		<!-- I made this router-link related to the payment page when you click on the button of kassan -->
+		<router-link to="/payment" class="ms-auto btn btn-secondary col-4 col-lg-2 m-0 my-2 py-3 fw-bold"
+			>Till kassan</router-link
+		>
 	</article>
 </template>
 <script>
