@@ -29,7 +29,7 @@
 	.descript {
 		display: flex;
 		align-items: center;
-		margin: 5em 0 2.5em 0;
+		margin: 5em 0 3em 0;
 		flex-wrap: wrap;
 	}
 
