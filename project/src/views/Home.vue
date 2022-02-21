@@ -32,12 +32,7 @@
 		margin: 5em 0 2.5em 0;
 		flex-wrap: wrap;
 	}
-	.descripti {
-		margin: 5em 0 2.5em 0;
-		display: flex;
-		align-items: center;
-		flex-direction: row-reverse;
-	}
+
 	h2 {
 		color: white;
 	}
