@@ -51,4 +51,7 @@
 		margin: 1em 2em;
 		width: 20em;
 	}
+	h1 {
+		margin-bottom: 0.5em;
+	}
 </style>
