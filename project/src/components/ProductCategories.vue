@@ -1,19 +1,16 @@
 <template>
+	<h1 class="display-3">{{ myCat }}</h1>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div v-for="product in products" :key="product.id">
-					<div class="card">
-						<img :src="'assets/products/' + product.images[0]" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<h5 class="card-title">{{ product.title }}</h5>
-							<p class="card-text">
-								{{ product.description }}
-							</p>
-							<h5>{{ product.price }} SEK</h5>
-							<router-link :to="`/product/${product.id}`" class="btn btn-dark">Info</router-link>
-						</div>
-					</div>
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+			<div class="card" v-for="product in products" :key="product.id">
+				<img :src="'assets/products/' + product.images[0]" class="card-img-top" alt="..." />
+				<div class="card-body">
+					<h5 class="card-title">{{ product.title }}</h5>
+					<p class="card-text">
+						{{ product.description }}
+					</p>
+					<h5>{{ product.price }} SEK</h5>
+					<router-link :to="`/product/${product.id}`" class="btn btn-dark">Info</router-link>
 				</div>
 			</div>
 		</div>
