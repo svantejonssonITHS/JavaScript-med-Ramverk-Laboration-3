@@ -93,6 +93,11 @@
 		background-color: white;
 		opacity: 0.5;
 	}
+	h1:hover {
+		background-color: #d1b464;
+		margin: auto;
+		max-width: 50%;
+	}
 	img {
 		max-width: 50%;
 	}
