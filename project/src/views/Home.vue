@@ -6,24 +6,48 @@
 		<p>Our history</p>
 	</section>
 	<ImageFetch />
-	<section>
-		<h2>Ta en titt på våra produkter</h2>
+	<section v-if="products && products.length > 0">
+		<h2 class="display-4 text-dark">Ta en titt på våra produkter</h2>
+		<div class="row justify-content-evenly">
+			<ProductCard
+				v-for="product in products"
+				:key="product.id"
+				:id="product.id"
+				:title="product.title"
+				:image="`assets/products/${product.images[0]}`"
+				:description="product.description"
+				:price="product.price"
+			/>
+		</div>
 	</section>
 </template>
 
 <script>
 	import ImageFetch from '../components/ImageFetch.vue';
 	import Carousel from '../components/Carousel.vue';
+	import ProductCard from '../components/ProductCard.vue';
 	export default {
 		components: {
 			ImageFetch,
-			Carousel
+			Carousel,
+			ProductCard
 		},
 		data() {
 			return {
 				images: '',
-				products: 0
+				products: null,
+				temp: null
 			};
+		},
+		methods: {
+			async getLastProducts() {
+				const response = await fetch('/products.json');
+				const results = await response.json();
+				this.products = results.reverse().slice(0, 4);
+			}
+		},
+		async created() {
+			await this.getLastProducts();
 		}
 	};
 </script>
