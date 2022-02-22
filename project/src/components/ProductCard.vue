@@ -1,6 +1,6 @@
 <template>
 	<div class="card">
-		<img :src="'assets/products/' + image" class="card-img-top" alt="..." />
+		<img :src="image" class="card-img-top" alt="..." />
 		<div class="card-body">
 			<h5 class="card-title">{{ title }}</h5>
 			<p class="card-text">
@@ -15,7 +15,7 @@
 <script>
 	export default {
 		name: 'ProductCard',
-		porps: {
+		props: {
 			id: {
 				type: String,
 				required: true
