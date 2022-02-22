@@ -6,6 +6,9 @@
 		<p>Our history</p>
 	</section>
 	<ImageFetch />
+	<section>
+		<h2>Ta en titt på våra produkter</h2>
+	</section>
 </template>
 
 <script>
