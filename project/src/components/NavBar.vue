@@ -35,10 +35,9 @@
 
 						<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
 					</div>
-
-					<router-link to="/" class="nav-item nav-link"><i class="fa fa-user-plus" id="user"></i></router-link>
-					<router-link to="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart" id="cart"></i></router-link>
 				</div>
+				<router-link to="/" class="nav-item nav-link"><i class="fa fa-user-plus" id="user"></i></router-link>
+				<router-link to="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart" id="cart"></i></router-link>
 			</div>
 		</nav>
 	</div>
