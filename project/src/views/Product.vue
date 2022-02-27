@@ -24,7 +24,14 @@
 		components: { SlideShow, ProductDetails },
 		data() {
 			return {
-				product: null
+				product: null,
+				toastOptions: {
+					title: 'Ändring i kundvagnen',
+					message: 'En produkt togs bort',
+					type: 'info',
+					position: ['end', 'start'],
+					duration: 3000
+				}
 			};
 		},
 		methods: {
@@ -60,6 +67,11 @@
 
 				// The updated cart is saved to localStorage
 				localStorage.setItem('cart', JSON.stringify(cart));
+
+				this.toastOptions.type = 'success';
+				this.toastOptions.message = `${this.product.title} lades till i din kundvagn.`;
+
+				this.$root.createToast(this.toastOptions);
 			}
 		},
 		async created() {
