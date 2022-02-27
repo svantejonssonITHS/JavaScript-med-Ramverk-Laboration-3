@@ -58,7 +58,7 @@
 				default: 2500, // Minimum, 2500ms (2.5s)
 				validator(value) {
 					// Minimum Toast duration is 2.5s
-					if (value < 2500 || !isNaN(value)) return false;
+					if (value < 2500 || isNaN(value)) return false;
 
 					return true;
 				}
