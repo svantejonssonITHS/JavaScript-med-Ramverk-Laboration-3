@@ -9,12 +9,14 @@
 		<FooterSection />
 	</footer>
 	<Toast
+		v-if="showToast"
 		:title="toastTitle"
 		:message="toastMessage"
 		:type="toastType"
 		:position="toastPosition"
 		:duration="toastDuration"
 		ref="toast"
+		@toast-end="destroyToast"
 	/>
 </template>
 
@@ -32,6 +34,7 @@
 		},
 		data() {
 			return {
+				showToast: false,
 				toastTitle: null,
 				toastMessage: null,
 				toastType: null,
@@ -40,13 +43,26 @@
 			};
 		},
 		methods: {
-			displayToast(options) {
+			createToast(options) {
+				// Remove all traces of old toasts
+				this.destroyToast();
+
+				// Toast is updated with new information
 				if (options.title) this.toastTitle = options.title;
 				if (options.message) this.toastMessage = options.message;
 				if (options.type) this.toastType = options.type;
 				if (options.position) this.toastPosition = options.position;
 				if (options.duration) this.toastDuration = options.duration;
-				this.$refs.toast.startCountdown();
+				this.showToast = true;
+			},
+			destroyToast() {
+				this.showToast = false;
+				this.showToast = false;
+				this.toastTitle = null;
+				this.toastMessage = null;
+				this.toastType = null;
+				this.toastPosition = null;
+				this.toastDuration = null;
 			}
 		}
 	};
