@@ -8,13 +8,13 @@
 		@mouseleave="startCountdown"
 	>
 		<header class="d-flex justify-content-between align-items-center p-2 rounded-top" :class="toastType">
-			<h2 class="m-0 p-0 fs-5">{{ title }}</h2>
+			<h2 class="m-0 me-2 p-0 fs-5">{{ title }}</h2>
 			<button class="btn rounded-circle d-flex align-items-center fs-5" :class="toastType" @click="removeToast">
 				<i class="fa fa-times"></i>
 			</button>
 		</header>
 		<main class="bg-white p-2 rounded-bottom">
-			<p class="m-0 p-0 pe-5 fs-5">{{ message }}</p>
+			<p class="m-0 p-0 pe-0 pe-sm-5 fs-5">{{ message }}</p>
 		</main>
 	</article>
 </template>
@@ -166,6 +166,7 @@
 
 	article {
 		z-index: 1000;
+		max-width: 500px;
 	}
 
 	button {
