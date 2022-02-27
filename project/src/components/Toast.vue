@@ -90,7 +90,17 @@
 				clearTimeout(this.timer);
 			},
 			removeToast() {
-				console.log('Remove Toast from page');
+				clearTimeout(this.timer);
+
+				const toast = document.querySelector('article#toast');
+				if (toast) {
+					toast.classList.remove('fadeIn');
+					toast.classList.add('fadeOut');
+				}
+
+				setTimeout(() => {
+					this.timer = null;
+				}, 1000);
 			}
 		},
 		created() {
