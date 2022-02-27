@@ -107,8 +107,6 @@
 			toastPosition() {
 				let xAxis;
 				let yAxis;
-				console.log(this.$props.position[0]);
-				console.log(this.$props.position[1]);
 
 				switch (this.$props.position[0]) {
 					case 'start':
