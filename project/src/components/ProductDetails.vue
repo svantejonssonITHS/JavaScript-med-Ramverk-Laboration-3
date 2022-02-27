@@ -3,12 +3,10 @@
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item" aria-current="page">
-					<router-link to="/product/d8907f9d-af50-49fe-afcc-1cd394aba056" class="text-underline-hover"
-						>Sortiment</router-link
-					>
+					<router-link to="/allProducts" class="text-underline-hover">Sortiment</router-link>
 				</li>
 				<li class="breadcrumb-item" aria-current="page">
-					<router-link to="/product/d8907f9d-af50-49fe-afcc-1cd394aba056" class="text-underline-hover">
+					<router-link :to="`/productCategories/${category}`" class="text-underline-hover">
 						{{ category }}
 					</router-link>
 				</li>
