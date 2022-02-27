@@ -77,7 +77,7 @@
 
 				this.timer = setTimeout(() => {
 					this.removeToast();
-				}, this.timeLeft);
+				}, this.timeLeft + 1000); // + 1000ms (1s) == animation time
 			},
 			pauseCountdown() {
 				this.timeLeft -= new Date() - this.startTime;
@@ -94,7 +94,7 @@
 
 				setTimeout(() => {
 					this.timer = null;
-				}, 1000);
+				}, 1000); // 1000ms (1s) == animation time
 			}
 		},
 		created() {
