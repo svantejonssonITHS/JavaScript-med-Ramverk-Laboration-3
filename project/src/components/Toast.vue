@@ -1,8 +1,8 @@
 <template>
-	<article class="zindex-modal shadow m-4 position-fixed top-0 end-0">
+	<article class="zindex-modal shadow m-4 position-fixed top-0 end-0" @mouseenter="pauseCountdown" @mouseleave="startCountdown">
 		<header class="info d-flex justify-content-between align-items-center p-2 rounded-top">
 			<h2 class="m-0 p-0 fs-5">{{ title }}</h2>
-			<button class="info btn rounded-circle d-flex align-items-center fs-5">
+			<button class="info btn rounded-circle d-flex align-items-center fs-5" @click="removeToast">
 				<i class="fa fa-times"></i>
 			</button>
 		</header>
@@ -57,6 +57,32 @@
 				required: false,
 				default: 2500 // 2500ms (2.5s)
 			}
+		},
+		data() {
+			return {
+				timer: null,
+				startTime: new Date(),
+				timeLeft: this.duration
+			};
+		},
+		methods: {
+			startCountdown() {
+				this.startTime = new Date();
+
+				this.timer = setTimeout(() => {
+					this.removeToast();
+				}, this.timeLeft);
+			},
+			pauseCountdown() {
+				this.timeLeft -= new Date() - this.startTime;
+				clearTimeout(this.timer);
+			},
+			removeToast() {
+				console.log('Remove Toast from page');
+			}
+		},
+		created() {
+			this.startCountdown();
 		}
 	};
 </script>
