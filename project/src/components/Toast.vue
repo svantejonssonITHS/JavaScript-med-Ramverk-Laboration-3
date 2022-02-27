@@ -2,7 +2,8 @@
 	<article
 		v-if="timer"
 		id="toast"
-		class="shadow m-4 position-fixed top-0 end-0 mw-100 fadeIn"
+		class="shadow m-4 position-fixed mw-100 fadeIn"
+		:style="toastPosition"
 		@mouseenter="pauseCountdown"
 		@mouseleave="startCountdown"
 	>
@@ -102,6 +103,38 @@
 		computed: {
 			toastType() {
 				return this.$props.type;
+			},
+			toastPosition() {
+				let xAxis;
+				let yAxis;
+				console.log(this.$props.position[0]);
+				console.log(this.$props.position[1]);
+
+				switch (this.$props.position[0]) {
+					case 'start':
+						xAxis = 'left: 0;';
+						break;
+					case 'middle':
+						xAxis = 'left: 50%; transform: translateX(-50%);';
+						break;
+					case 'end':
+						xAxis = 'right: 0;';
+						break;
+				}
+
+				switch (this.$props.position[1]) {
+					case 'start':
+						yAxis = 'top: 0;';
+						break;
+					case 'middle':
+						yAxis = 'top: 50%; transform: translateY(-50%)';
+						break;
+					case 'end':
+						yAxis = 'bottom: 0;';
+						break;
+				}
+
+				return `${xAxis} ${yAxis}`;
 			}
 		},
 		created() {
