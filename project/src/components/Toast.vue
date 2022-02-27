@@ -6,9 +6,9 @@
 		@mouseenter="pauseCountdown"
 		@mouseleave="startCountdown"
 	>
-		<header class="info d-flex justify-content-between align-items-center p-2 rounded-top">
+		<header class="d-flex justify-content-between align-items-center p-2 rounded-top" :class="toastType">
 			<h2 class="m-0 p-0 fs-5">{{ title }}</h2>
-			<button class="info btn rounded-circle d-flex align-items-center fs-5" @click="removeToast">
+			<button class="btn rounded-circle d-flex align-items-center fs-5" :class="toastType" @click="removeToast">
 				<i class="fa fa-times"></i>
 			</button>
 		</header>
@@ -97,6 +97,11 @@
 					this.timer = null;
 					this.$emit('toast-end');
 				}, 1000); // 1000ms (1s) == animation time
+			}
+		},
+		computed: {
+			toastType() {
+				return this.$props.type;
 			}
 		},
 		created() {
