@@ -1,5 +1,11 @@
 <template>
-	<article class="shadow m-4 position-fixed top-0 end-0 mw-100" @mouseenter="pauseCountdown" @mouseleave="startCountdown">
+	<article
+		v-if="timer"
+		id="toast"
+		class="shadow m-4 position-fixed top-0 end-0 mw-100 fadeIn"
+		@mouseenter="pauseCountdown"
+		@mouseleave="startCountdown"
+	>
 		<header class="info d-flex justify-content-between align-items-center p-2 rounded-top">
 			<h2 class="m-0 p-0 fs-5">{{ title }}</h2>
 			<button class="info btn rounded-circle d-flex align-items-center fs-5" @click="removeToast">
@@ -121,5 +127,33 @@
 	button {
 		height: 100% !important;
 		aspect-ratio: 1/1;
+	}
+
+	.fadeIn {
+		animation: fadeIn 1000ms;
+	}
+
+	.fadeOut {
+		animation: fadeOut 1000ms forwards;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+			visibility: visible;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes fadeOut {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+			visibility: collapse;
+		}
 	}
 </style>
