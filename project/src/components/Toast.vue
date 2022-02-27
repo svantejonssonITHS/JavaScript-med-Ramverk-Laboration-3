@@ -64,6 +64,7 @@
 				default: 2500
 			}
 		},
+		emits: ['toast-end'],
 		data() {
 			return {
 				timer: null,
@@ -94,6 +95,7 @@
 
 				setTimeout(() => {
 					this.timer = null;
+					this.$emit('toast-end');
 				}, 1000); // 1000ms (1s) == animation time
 			}
 		},
