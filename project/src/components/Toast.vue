@@ -1,9 +1,5 @@
 <template>
-	<article
-		class="zindex-modal shadow m-4 position-fixed top-0 end-0 mw-100"
-		@mouseenter="pauseCountdown"
-		@mouseleave="startCountdown"
-	>
+	<article class="shadow m-4 position-fixed top-0 end-0 mw-100" @mouseenter="pauseCountdown" @mouseleave="startCountdown">
 		<header class="info d-flex justify-content-between align-items-center p-2 rounded-top">
 			<h2 class="m-0 p-0 fs-5">{{ title }}</h2>
 			<button class="info btn rounded-circle d-flex align-items-center fs-5" @click="removeToast">
@@ -116,6 +112,10 @@
 	.danger {
 		background-color: #dc3545;
 		color: #f8f9fa;
+	}
+
+	article {
+		z-index: 1000;
 	}
 
 	button {
