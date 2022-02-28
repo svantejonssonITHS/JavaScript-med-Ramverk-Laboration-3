@@ -1,5 +1,5 @@
 <template>
-	<div id="nav" class="d-flex justify-content-evenly">
+	<div id="nav" class="d-flex justify-content-center">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container-fluid">
 				<button
@@ -35,10 +35,10 @@
 
 						<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
 					</div>
-
-					<router-link to="/signup" class="nav-item nav-link"><i class="fa fa-user-plus" id="user"></i></router-link>
-					<router-link to="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart" id="cart"></i></router-link>
 				</div>
+				<router-link to="/signup" class="nav-item nav-link"><i class="fa fa-user-plus" id="addUser"></i></router-link>
+				<router-link to="/UserPage" class="nav-item nav-link"><i class="fa fa-user" id="user"></i></router-link>
+				<router-link to="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart" id="cart"></i></router-link>
 			</div>
 		</nav>
 	</div>
@@ -58,7 +58,6 @@
 	}
 	#cart {
 		font-size: 2em;
-		margin-right: 40px;
 	}
 	form {
 		margin-left: 40px;
@@ -79,6 +78,9 @@
 		color: black;
 		margin-left: 40px;
 		font-size: x-large;
+	}
+	#addUser {
+		font-size: 2em;
 	}
 	#user {
 		font-size: 2em;

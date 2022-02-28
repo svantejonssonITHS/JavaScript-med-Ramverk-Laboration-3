@@ -21,7 +21,10 @@
 			/>
 		</ul>
 		<h3 class="text-end m-0 p-0 my-3">Totalt värde: {{ cartValue }} SEK</h3>
-		<button class="ms-auto btn btn-secondary col-4 col-lg-2 m-0 my-2 py-3 fw-bold">Till kassan</button>
+		<!-- I made this router-link related to the payment page when you click on the button of kassan -->
+		<router-link to="/payment" class="ms-auto btn btn-secondary col-4 col-lg-2 m-0 my-2 py-3 fw-bold"
+			>Till kassan</router-link
+		>
 	</article>
 </template>
 <script>
@@ -33,7 +36,14 @@
 		data() {
 			return {
 				cart: localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : null,
-				products: []
+				products: [],
+				toastOptions: {
+					title: 'Ändring i kundvagnen',
+					message: 'En produkt togs bort',
+					type: 'info',
+					position: ['end', 'start'],
+					duration: 3000
+				}
 			};
 		},
 		methods: {
@@ -61,10 +71,16 @@
 			},
 			removeCartItem(id) {
 				const updateIndex = this.cart.findIndex((productInCart) => productInCart.id === id);
+
+				this.toastOptions.type = 'danger';
+				this.toastOptions.message = `${this.products[updateIndex].title} togs bort från din kundvagn.`;
+
 				this.products.splice(updateIndex, 1);
 				this.cart.splice(updateIndex, 1);
 
 				localStorage.setItem('cart', JSON.stringify(this.cart));
+
+				this.$root.createToast(this.toastOptions);
 			}
 		},
 		computed: {

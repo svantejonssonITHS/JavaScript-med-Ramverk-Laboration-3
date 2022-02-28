@@ -24,6 +24,11 @@ const router = createRouter({
 			path: '/contact'
 		},
 		{
+			name: 'UserPage',
+			component: () => import('./views/UserPage.vue'),
+			path: '/userPage/'
+		},
+		{
 			name: 'All products',
 			component: () => import('./views/AllProducts.vue'),
 			path: '/allProducts'
@@ -42,6 +47,11 @@ const router = createRouter({
 			name: 'signup',
 			component: () => import('./components/Register.vue'),
 			path: '/signup'
+		},
+		{
+			name: 'Payment',
+			component: () => import('./views/Payment.vue'),
+			path: '/payment'
 		}
 	]
 });
