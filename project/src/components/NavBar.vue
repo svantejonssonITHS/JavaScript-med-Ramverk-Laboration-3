@@ -34,6 +34,22 @@
 						</i>
 
 						<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
+
+						<i class="nav-item dropdown"
+							><a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<FilterSearch />
+							</div>
+						</i>
 					</div>
 				</div>
 				<router-link to="/signup" class="nav-item nav-link"><i class="fa fa-user-plus" id="addUser"></i></router-link>
@@ -43,6 +59,15 @@
 		</nav>
 	</div>
 </template>
+<script>
+	import FilterSearch from './FilterSearch.vue';
+
+	export default {
+		components: {
+			FilterSearch
+		}
+	};
+</script>
 <style lang="scss" scoped>
 	$gold-background: radial-gradient(
 			ellipse farthest-corner at right bottom,

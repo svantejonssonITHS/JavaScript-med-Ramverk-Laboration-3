@@ -1,16 +1,7 @@
-<script>
-	import FilterSearch from './../components/FilterSearch.vue';
-
-	export default {
-		components: {
-			FilterSearch
-		}
-	};
-</script>
+<script></script>
 
 <template>
 	<h1 class="display-3">Kategorier</h1>
-	<FilterSearch />
 
 	<img src="../../assets/products/c0ddf106-e306-463d-9736-4a652466f464/0.jpg" />
 </template>
