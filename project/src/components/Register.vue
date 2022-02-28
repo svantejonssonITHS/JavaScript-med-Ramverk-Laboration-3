@@ -5,47 +5,47 @@
 				<div class="card px-5 py-4" id="form1">
 					<div class="form-data" v-if="!submitted">
 						<div class="text-center mb-4">
-							<h4>Register Now</h4>
+							<h4>Registrera nu!</h4>
 						</div>
 						<div class="forms-inputs mb-4">
-							<span>Email</span>
+							<span>E-mail</span>
 							<input
 								type="text"
 								v-model="email"
 								:class="{ 'form-control': true, 'is-invalid': !validEmail(email) && emailBlured }"
 								@blur="emailBlured = true"
 							/>
-							<div class="invalid-feedback">A valid email is required!</div>
+							<div class="invalid-feedback">Skriv in ett giltigt mejl!</div>
 						</div>
 						<div class="forms-inputs mb-4">
-							<span>Username</span>
+							<span>Användarnamn</span>
 							<input
 								type="text"
 								v-model="username"
 								:class="{ 'form-control': true, 'is-invalid': !validUsername(username) && usernameBlured }"
 								@blur="usernameBlured = true"
 							/>
-							<div class="invalid-feedback">A valid username is required!</div>
+							<div class="invalid-feedback">Skriv in ett giltigt användarnamn!</div>
 						</div>
 						<div class="forms-inputs mb-4">
-							<span>Age</span>
+							<span>Telefonnummer</span>
 							<input
 								type="text"
 								v-model="phone"
 								:class="{ 'form-control': true, 'is-invalid': !validPhone(phone) && phoneBlured }"
 								@blur="phoneBlured = true"
 							/>
-							<div class="invalid-feedback">A valid phone is required!</div>
+							<div class="invalid-feedback">Skriv in ett giltigt telefonnummer!</div>
 						</div>
 						<div class="forms-inputs mb-4">
-							<span>Password</span>
+							<span>Lösenord</span>
 							<input
 								type="password"
 								v-model="password"
 								:class="{ 'form-control': true, 'is-invalid': !validPassword(password) && passwordBlured }"
 								@blur="passwordBlured = true"
 							/>
-							<div class="invalid-feedback">Password must be 8 character!</div>
+							<div class="invalid-feedback">Lösenord måste minst vara 8 bokstäver!</div>
 						</div>
 						<div class="mb-3"><button @click.stop.prevent="submit" class="btn btn-dark w-100">Register</button></div>
 					</div>
