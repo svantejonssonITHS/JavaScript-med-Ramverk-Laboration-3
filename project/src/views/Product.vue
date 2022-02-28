@@ -27,7 +27,7 @@
 				product: null,
 				toastOptions: {
 					title: 'Ändring i kundvagnen',
-					message: 'En produkt togs bort',
+					message: 'En produkt lades till',
 					type: 'info',
 					position: ['end', 'start'],
 					duration: 3000
