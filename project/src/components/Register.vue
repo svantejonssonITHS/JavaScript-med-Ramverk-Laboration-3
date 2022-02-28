@@ -31,7 +31,7 @@
 							<span>Telefonnummer</span>
 							<input
 								type="text"
-								v-model="phone"
+								v-model="myPhone"
 								:class="{ 'form-control': true, 'is-invalid': !validPhone(phone) && phoneBlured }"
 								@blur="phoneBlured = true"
 							/>
@@ -41,7 +41,7 @@
 							<span>Lösenord</span>
 							<input
 								type="password"
-								v-model="passWord"
+								v-model="password"
 								:class="{ 'form-control': true, 'is-invalid': !validPassword(password) && passwordBlured }"
 								@blur="passwordBlured = true"
 							/>
@@ -76,7 +76,16 @@
 					this.$store.commit('updateEmail', value);
 				}
 			},
-
+			myPhone: {
+				get() {
+					return this.$store.state.myPhone;
+				},
+				set(value) {
+					this.$store.commit('updateMyPhone', value);
+					console.log(this.myPhone);
+					console.log('computed');
+				}
+			},
 			userName: {
 				get() {
 					return this.$store.state.userName;
@@ -139,8 +148,8 @@
 				}
 			},
 
-			validPhone: function (phone) {
-				if (phone.length > 9 && phone.length < 12) {
+			validPhone: function (myPhone) {
+				if (myPhone.length > 9 && myPhone.length < 12) {
 					return true;
 				}
 			},

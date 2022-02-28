@@ -32,6 +32,12 @@
 							<div id="emailHelp" class="form-text">Postnummer, postort.</div>
 							<br />
 						</div>
+						<div class="form-group">
+							Telefonnummer:<br />
+							<input type="text" name="phone" class="form-control" :value="myPhone" />
+
+							<br />
+						</div>
 						<div class="mb-3">
 							<label for="exampleInputEmail1" class="form-label">E-post: </label>
 							<input
@@ -69,7 +75,9 @@
 			eMail() {
 				return this.$store.state.eMail;
 			},
-
+			myPhone() {
+				return this.$store.state.myPhone;
+			},
 			userName() {
 				return this.$store.state.userName;
 			}
