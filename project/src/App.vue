@@ -57,7 +57,6 @@
 			},
 			destroyToast() {
 				this.showToast = false;
-				this.showToast = false;
 				this.toastTitle = null;
 				this.toastMessage = null;
 				this.toastType = null;
