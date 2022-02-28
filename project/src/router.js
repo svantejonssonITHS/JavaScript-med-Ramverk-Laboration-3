@@ -44,6 +44,11 @@ const router = createRouter({
 			path: '/cart'
 		},
 		{
+			name: 'signup',
+			component: () => import('./components/Register.vue'),
+			path: '/signup'
+		},
+		{
 			name: 'Payment',
 			component: () => import('./views/Payment.vue'),
 			path: '/payment'

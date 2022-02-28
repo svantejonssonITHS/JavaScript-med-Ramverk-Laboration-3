@@ -36,7 +36,7 @@
 						<router-link to="/contact" class="nav-item nav-link">Kontakt</router-link>
 					</div>
 				</div>
-				<router-link to="/" class="nav-item nav-link"><i class="fa fa-user-plus" id="addUser"></i></router-link>
+				<router-link to="/signup" class="nav-item nav-link"><i class="fa fa-user-plus" id="addUser"></i></router-link>
 				<router-link to="/UserPage" class="nav-item nav-link"><i class="fa fa-user" id="user"></i></router-link>
 				<router-link to="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart" id="cart"></i></router-link>
 			</div>
