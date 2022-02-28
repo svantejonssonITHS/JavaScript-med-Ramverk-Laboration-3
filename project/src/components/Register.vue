@@ -11,8 +11,8 @@
 							<span>E-mail</span>
 							<input
 								type="text"
-								v-model="email"
-								:class="{ 'form-control': true, 'is-invalid': !validEmail(email) && emailBlured }"
+								v-model="eMail"
+								:class="{ 'form-control': true, 'is-invalid': !validEmail(eMail) && emailBlured }"
 								@blur="emailBlured = true"
 							/>
 							<div class="invalid-feedback">Skriv in ett giltigt mejl!</div>
@@ -21,8 +21,8 @@
 							<span>Användarnamn</span>
 							<input
 								type="text"
-								v-model="username"
-								:class="{ 'form-control': true, 'is-invalid': !validUsername(username) && usernameBlured }"
+								v-model="userName"
+								:class="{ 'form-control': true, 'is-invalid': !validUsername(userName) && usernameBlured }"
 								@blur="usernameBlured = true"
 							/>
 							<div class="invalid-feedback">Skriv in ett giltigt användarnamn!</div>
@@ -41,7 +41,7 @@
 							<span>Lösenord</span>
 							<input
 								type="password"
-								v-model="password"
+								v-model="passWord"
 								:class="{ 'form-control': true, 'is-invalid': !validPassword(password) && passwordBlured }"
 								@blur="passwordBlured = true"
 							/>
@@ -67,6 +67,27 @@
 	//importing bootstrap 5 Modules
 	import 'bootstrap/dist/css/bootstrap.min.css';
 	export default {
+		computed: {
+			eMail: {
+				get() {
+					return this.$store.state.eMail;
+				},
+				set(value) {
+					this.$store.commit('updateEmail', value);
+				}
+			},
+
+			userName: {
+				get() {
+					return this.$store.state.userName;
+				},
+				set(value) {
+					this.$store.commit('updateUserName', value);
+					console.log(this.userName);
+					console.log('computed');
+				}
+			}
+		},
 		el: '#form1',
 		data: function () {
 			return {
@@ -99,9 +120,9 @@
 				}
 			},
 
-			validEmail: function (email) {
+			validEmail: function (eMail) {
 				var re = /(.+)@(.+){2,}\.(.+){2,}/;
-				if (re.test(email.toLowerCase())) {
+				if (re.test(eMail.toLowerCase())) {
 					return true;
 				}
 			},
@@ -112,8 +133,8 @@
 				}
 			},
 
-			validUsername: function (username) {
-				if (!/\s/.test(username)) {
+			validUsername: function (userName) {
+				if (!/\s/.test(userName)) {
 					return true;
 				}
 			},

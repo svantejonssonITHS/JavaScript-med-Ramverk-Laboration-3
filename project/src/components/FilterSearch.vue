@@ -32,7 +32,7 @@
 </script>
 
 <template>
-	<div>
+	<div class="overflow-scroll">
 		<div class="search col row-cols-1">
 			<input class="searchInput" type="text" v-model="search" placeholder="Search Your Products" />
 		</div>
@@ -53,6 +53,10 @@
 	</div>
 </template>
 <style lang="scss" scoped>
+	.overflow-scroll {
+		max-height: 75vh;
+		overflow-x: hidden !important;
+	}
 	.card {
 		margin: 2em 2em;
 		width: 20em;

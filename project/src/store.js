@@ -1,12 +1,18 @@
 import { createStore } from 'vuex';
 
 const mutations = {
-		increment(state) {
-			state.counter += 1;
+		updateEmail(state, eMail) {
+			state.eMail = eMail;
+		},
+
+		updateUserName(state, userName) {
+			state.userName = userName;
 		}
 	},
 	state = {
-		counter: 0
+		eMail: '',
+
+		userName: ''
 	};
 
 export default createStore({ mutations, state, strict: true });
