@@ -9,6 +9,10 @@
 					<h5 class="card-title">Användarprofil</h5>
 					<form>
 						<div class="form-group">
+							Användarnamn:<br />
+							<input type="text" name="name" class="form-control" :value="userName" /><br />
+						</div>
+						<div class="form-group">
 							Förnamn:<br />
 							<input type="text" name="name" class="form-control" /><br />
 						</div>
@@ -29,19 +33,28 @@
 							<br />
 						</div>
 						<div class="mb-3">
-							<label for="exampleInputEmail1" class="form-label">E-post:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+							<label for="exampleInputEmail1" class="form-label">E-post: </label>
+							<input
+								type="email"
+								class="form-control"
+								id="exampleInputEmail1"
+								aria-describedby="emailHelp"
+								:value="eMail"
+							/>
 							<div id="emailHelp" class="form-text">Vi delar inte din e-postadress med någon annan.</div>
 						</div>
 						<div class="mb-3">
-							<label for="exampleInputPassword1" class="form-label">Lösenord</label>
+							<label for="exampleInputPassword1" class="form-label">Nytt lösenord</label>
 							<input type="password" class="form-control" id="exampleInputPassword1" />
 							<div id="passwordHelpBlock" class="form-text">
 								Ditt lösenord behöver vara 8-20 tecken, innehålla bokstäver och siffor, men inga mellanrum,
 								specialtecken eller emojis.
 							</div>
 						</div>
-
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">Bekräfta lösenord</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" />
+						</div>
 						<button type="submit" class="btn btn-dark">Spara</button>
 						<button class="btn btn-dark" type="reset">Avbryt</button>
 					</form>
@@ -50,6 +63,19 @@
 		</div>
 	</div>
 </template>
+<script>
+	export default {
+		computed: {
+			eMail() {
+				return this.$store.state.eMail;
+			},
+
+			userName() {
+				return this.$store.state.userName;
+			}
+		}
+	};
+</script>
 <style lang="scss" scoped>
 	button {
 		margin-right: 10px;
