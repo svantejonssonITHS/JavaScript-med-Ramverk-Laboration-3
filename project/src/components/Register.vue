@@ -28,7 +28,7 @@
 							<div class="invalid-feedback">A valid username is required!</div>
 						</div>
 						<div class="forms-inputs mb-4">
-							<span>Phone</span>
+							<span>Age</span>
 							<input
 								type="text"
 								v-model="phone"
