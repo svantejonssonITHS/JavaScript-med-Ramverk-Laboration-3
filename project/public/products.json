@@ -10,7 +10,9 @@
 			"8f712c07-796d-4028-988d-6aa2c941523c/2.jpg"
 		],
 		"stock": 21,
-		"price": 2000
+		"price": 2000,
+		"matirial": "plast och glas",
+		"vikt": 87
 	},
 	{
 		"id": "d8907f9d-af50-49fe-afcc-1cd394aba056",
@@ -19,7 +21,9 @@
 		"description": "Miro Bracelet är klassiskt tunt armband med gnistrande kristaller utav högsta kvalitét hela vägen runt. Kedjan är 15 cm lång med en 4 cm lång förlängningskedja. Tillverkad av mässing med 18 K guld- eller rhodiumplätering. Designad i Sverige, handgjord i Grekland. Levereras i Caroline Svedbom ask.",
 		"images": ["d8907f9d-af50-49fe-afcc-1cd394aba056/0.jpg"],
 		"stock": 14,
-		"price": 529
+		"price": 529,
+		"matirial": "tyg och polister",
+		"vikt": 22
 	},
 	{
 		"id": "c0ddf106-e306-463d-9736-4a652466f464",
@@ -28,7 +32,9 @@
 		"description": "Detta armband har prytt med röda och vita pärlor.",
 		"images": ["c0ddf106-e306-463d-9736-4a652466f464/0.jpg"],
 		"stock": 10,
-		"price": 149
+		"price": 149,
+		"matirial": "röda och vita pärlor",
+		"vikt": 21
 	},
 	{
 		"id": "7c9c1f27-c73f-433f-a8e9-fbe0d9b1bd92",
@@ -37,7 +43,9 @@
 		"description": "Läderarmband med pärlor i fina färger.",
 		"images": ["7c9c1f27-c73f-433f-a8e9-fbe0d9b1bd92/0.jpg"],
 		"stock": 7,
-		"price": 199
+		"price": 199,
+		"matirial": "platin",
+		"vikt": 26
 	},
 	{
 		"id": "a1529887-69c6-49fd-8be6-1844a8ff54be",
@@ -46,7 +54,9 @@
 		"description": "Armband prytt med stenar i olika färger och storlekar.",
 		"images": ["a1529887-69c6-49fd-8be6-1844a8ff54be/0.jpg"],
 		"stock": 2,
-		"price": 99
+		"price": 99,
+		"matirial": "silver mid platin",
+		"vikt": 28
 	},
 	{
 		"id": "997323a5-68d0-420e-8e1d-afb902838f90",
@@ -55,7 +65,9 @@
 		"description": "Detta koppararmband snirklar sig runt handleden.",
 		"images": ["997323a5-68d0-420e-8e1d-afb902838f90/0.jpg"],
 		"stock": 25,
-		"price": 499
+		"price": 499,
+		"matirial": "blandat metal",
+		"vikt": 55
 	},
 	{
 		"id": "7d1ebfe9-0a7e-4db6-a068-b1045a3251fe",
@@ -64,7 +76,9 @@
 		"description": "Dessa örhängen är väldigt fina.",
 		"images": ["7d1ebfe9-0a7e-4db6-a068-b1045a3251fe/0.jpg"],
 		"stock": 4,
-		"price": 499
+		"price": 499,
+		"matirial": "silver",
+		"vikt": 12
 	},
 	{
 		"id": "59555930-be69-466f-91dc-2f564c26cc4b",
@@ -73,7 +87,9 @@
 		"description": "Örhängen med en slipad topas. Passar till vissa kläder.",
 		"images": ["59555930-be69-466f-91dc-2f564c26cc4b/0.jpg"],
 		"stock": 13,
-		"price": 449
+		"price": 449,
+		"matirial": "gold",
+		"vikt": 19
 	},
 	{
 		"id": "71a2e053-be41-4e7d-bebd-60375ab93b26",
@@ -82,7 +98,9 @@
 		"description": "Dessa röda metallblommor sätter färg på vardagen.",
 		"images": ["71a2e053-be41-4e7d-bebd-60375ab93b26/0.jpg"],
 		"stock": 16,
-		"price": 149
+		"price": 149,
+		"matirial": "plast",
+		"vikt": 13
 	},
 	{
 		"id": "9c18dfb9-a936-46b7-ae19-e020ec9f0585",
@@ -91,7 +109,9 @@
 		"description": "Dessa örhängena är gjorda i metall.",
 		"images": ["9c18dfb9-a936-46b7-ae19-e020ec9f0585/0.jpg"],
 		"stock": 3,
-		"price": 249
+		"price": 249,
+		"matirial": "coper",
+		"vikt": 15
 	},
 	{
 		"id": "dda04347-b918-4f5d-9f7d-206fe65c6e30",
@@ -100,7 +120,9 @@
 		"description": "Detta halsband kommer att förgylla din look!",
 		"images": ["dda04347-b918-4f5d-9f7d-206fe65c6e30/0.jpg"],
 		"stock": 9,
-		"price": 499
+		"price": 499,
+		"matirial": "silver",
+		"vikt": 98
 	},
 	{
 		"id": "7be728f6-29a5-4587-8c07-825587d5ac9d",
@@ -109,7 +131,9 @@
 		"description": "Denna ring är fint detaljerad med svarta mönster.",
 		"images": ["7be728f6-29a5-4587-8c07-825587d5ac9d/0.jpg"],
 		"stock": 17,
-		"price": 149
+		"price": 149,
+		"matirial": "platin",
+		"vikt": 77
 	},
 	{
 		"id": "f357fc33-1d11-498d-8e32-b9d7cde2461d",
@@ -118,7 +142,9 @@
 		"description": "Detta halsband kan säkert passa till någon sorts klädsel.",
 		"images": ["f357fc33-1d11-498d-8e32-b9d7cde2461d/0.jpg"],
 		"stock": 3,
-		"price": 2999
+		"price": 2999,
+		"matirial": "vitt gold",
+		"vikt": 66
 	},
 	{
 		"id": "bdbe5a4c-92a2-49ec-ab72-5b3da5fa2ce9",
@@ -127,7 +153,9 @@
 		"description": "Detta halsband är prytt med stenar, stora som små.",
 		"images": ["bdbe5a4c-92a2-49ec-ab72-5b3da5fa2ce9/0.jpg"],
 		"stock": 181,
-		"price": 149
+		"price": 149,
+		"matirial": "metal",
+		"vikt": 87
 	},
 	{
 		"id": "032cbc00-e00c-46b5-8a37-88ac7bd66d96",
@@ -136,7 +164,9 @@
 		"description": "Denna klockan är stilren och passar bra till det mesta.",
 		"images": ["032cbc00-e00c-46b5-8a37-88ac7bd66d96/0.jpg"],
 		"stock": 13,
-		"price": 1299
+		"price": 1299,
+		"matirial": "blandat material ",
+		"vikt": 230
 	},
 	{
 		"id": "7bcae998-b7dc-4494-9a6c-56478d890cf8",
@@ -145,7 +175,9 @@
 		"description": "Denna klockan har ett armband av gummi och även en digital komponent.",
 		"images": ["7bcae998-b7dc-4494-9a6c-56478d890cf8/0.jpg"],
 		"stock": 1,
-		"price": 349
+		"price": 349,
+		"matirial": "plast och glas",
+		"vikt": 198
 	},
 	{
 		"id": "681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0",
@@ -154,7 +186,9 @@
 		"description": "Denna klockan har ett snyggt armband i läder. Urtavlan består av romerska numeraler.",
 		"images": ["681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0/0.jpg"],
 		"stock": 21,
-		"price": 1499
+		"price": 1499,
+		"matirial": "metal",
+		"vikt": 220
 	},
 	{
 		"id": "4ab4db67-9614-4908-b563-63cf42585749",
@@ -163,7 +197,9 @@
 		"description": "Denna klocka är högteknologisk och är väldigt hållbar.",
 		"images": ["4ab4db67-9614-4908-b563-63cf42585749/0.jpg"],
 		"stock": 52,
-		"price": 899
+		"price": 899,
+		"matirial": "paltin och glas",
+		"vikt": 210
 	},
 	{
 		"id": "0cd2edc6-cbfa-440b-9c09-1c569042c69b",
@@ -172,7 +208,9 @@
 		"description": "Glasögon med gulddetaljer som ger dig en klassisk look!",
 		"images": ["0cd2edc6-cbfa-440b-9c09-1c569042c69b/0.jpg"],
 		"stock": 9,
-		"price": 249
+		"price": 249,
+		"matirial": " plast och glas",
+		"vikt": 105
 	},
 	{
 		"id": "7b67fbcb-20c8-45c5-9f8a-3ff31eab85a4",
@@ -181,7 +219,9 @@
 		"description": "Dessa solglasögon har blått polariserande glas för att få bort så mycket solljus som möjligt.",
 		"images": ["7b67fbcb-20c8-45c5-9f8a-3ff31eab85a4/0.jpg"],
 		"stock": 192,
-		"price": 149
+		"price": 149,
+		"matirial": "plast",
+		"vikt": 133
 	},
 	{
 		"id": "f6679b4b-efc5-4a92-950f-ff7274b784c5",
@@ -190,7 +230,9 @@
 		"description": "Solglasögon som ger en lite roligare bild.",
 		"images": ["f6679b4b-efc5-4a92-950f-ff7274b784c5/0.jpg"],
 		"stock": 14,
-		"price": 89
+		"price": 89,
+		"matirial": "plast och glas",
+		"vikt": 127
 	},
 	{
 		"id": "f9431042-25e0-4ba5-8291-37c2e16a8881",
@@ -199,7 +241,9 @@
 		"description": "Solglasögon som är perfekt för personer som cyklar mycket.",
 		"images": ["f9431042-25e0-4ba5-8291-37c2e16a8881/0.png"],
 		"stock": 19,
-		"price": 1199
+		"price": 1199,
+		"matirial": "plast och glas",
+		"vikt": 120
 	},
 	{
 		"id": "85a5c68f-a3ce-4217-ab2a-592f99d1fa1b",
@@ -212,7 +256,9 @@
 			"85a5c68f-a3ce-4217-ab2a-592f99d1fa1b/2.jpg"
 		],
 		"stock": 14,
-		"price": 149
+		"price": 149,
+		"matirial": "skin",
+		"vikt": 133
 	},
 	{
 		"id": "2029ce36-b763-4856-8a6b-dc79d2f0a8c6",
@@ -221,7 +267,9 @@
 		"description": "Denna plånkbok är gjord av renskinn.",
 		"images": ["2029ce36-b763-4856-8a6b-dc79d2f0a8c6/0.jpg"],
 		"stock": 17,
-		"price": 249
+		"price": 249,
+		"matirial": "renskinn",
+		"vikt": 126
 	},
 	{
 		"id": "23a1cdad-9c66-49ba-aacf-01e43c9ce869",
@@ -230,7 +278,9 @@
 		"description": "Denna plånbok har fack för kort och sedlar.",
 		"images": ["23a1cdad-9c66-49ba-aacf-01e43c9ce869/0.jpg"],
 		"stock": 203,
-		"price": 149
+		"price": 149,
+		"matirial": "renskinn och plast",
+		"vikt": 134
 	},
 	{
 		"id": "b0e9353a-2118-41db-8b53-047550b496bd",
@@ -239,6 +289,8 @@
 		"description": "Plånboken har flera fack för kort.",
 		"images": ["b0e9353a-2118-41db-8b53-047550b496bd/0.jpg"],
 		"stock": 15,
-		"price": 399
+		"price": 399,
+		"matirial": "polistir",
+		"vikt": 155
 	}
 ]

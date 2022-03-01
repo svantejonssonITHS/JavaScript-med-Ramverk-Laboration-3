@@ -42,7 +42,7 @@
 										aria-describedby="button-addon2"
 									/>
 									<button class="btn btn-primary" id="button-addon2" type="button">
-										<i class="fas fa-paper-plane"></i>
+										<i class="fa fa-paper-plane"></i>
 									</button>
 								</div>
 							</form>
