@@ -11,8 +11,8 @@
 		],
 		"stock": 21,
 		"price": 2000,
-		"matirial": "plast och glas",
-		"vikt": 87
+		"material": "plast och glas",
+		"weight": 87
 	},
 	{
 		"id": "d8907f9d-af50-49fe-afcc-1cd394aba056",
@@ -22,8 +22,8 @@
 		"images": ["d8907f9d-af50-49fe-afcc-1cd394aba056/0.jpg"],
 		"stock": 14,
 		"price": 529,
-		"matirial": "tyg och polister",
-		"vikt": 22
+		"material": "tyg och polister",
+		"weight": 22
 	},
 	{
 		"id": "c0ddf106-e306-463d-9736-4a652466f464",
@@ -33,8 +33,8 @@
 		"images": ["c0ddf106-e306-463d-9736-4a652466f464/0.jpg"],
 		"stock": 10,
 		"price": 149,
-		"matirial": "röda och vita pärlor",
-		"vikt": 21
+		"material": "röda och vita pärlor",
+		"weight": 21
 	},
 	{
 		"id": "7c9c1f27-c73f-433f-a8e9-fbe0d9b1bd92",
@@ -44,8 +44,8 @@
 		"images": ["7c9c1f27-c73f-433f-a8e9-fbe0d9b1bd92/0.jpg"],
 		"stock": 7,
 		"price": 199,
-		"matirial": "platin",
-		"vikt": 26
+		"material": "platin",
+		"weight": 26
 	},
 	{
 		"id": "a1529887-69c6-49fd-8be6-1844a8ff54be",
@@ -55,8 +55,8 @@
 		"images": ["a1529887-69c6-49fd-8be6-1844a8ff54be/0.jpg"],
 		"stock": 2,
 		"price": 99,
-		"matirial": "silver mid platin",
-		"vikt": 28
+		"material": "silver mid platin",
+		"weight": 28
 	},
 	{
 		"id": "997323a5-68d0-420e-8e1d-afb902838f90",
@@ -66,8 +66,8 @@
 		"images": ["997323a5-68d0-420e-8e1d-afb902838f90/0.jpg"],
 		"stock": 25,
 		"price": 499,
-		"matirial": "blandat metal",
-		"vikt": 55
+		"material": "blandat metal",
+		"weight": 55
 	},
 	{
 		"id": "7d1ebfe9-0a7e-4db6-a068-b1045a3251fe",
@@ -77,8 +77,8 @@
 		"images": ["7d1ebfe9-0a7e-4db6-a068-b1045a3251fe/0.jpg"],
 		"stock": 4,
 		"price": 499,
-		"matirial": "silver",
-		"vikt": 12
+		"material": "silver",
+		"weight": 12
 	},
 	{
 		"id": "59555930-be69-466f-91dc-2f564c26cc4b",
@@ -88,8 +88,8 @@
 		"images": ["59555930-be69-466f-91dc-2f564c26cc4b/0.jpg"],
 		"stock": 13,
 		"price": 449,
-		"matirial": "gold",
-		"vikt": 19
+		"material": "gold",
+		"weight": 19
 	},
 	{
 		"id": "71a2e053-be41-4e7d-bebd-60375ab93b26",
@@ -99,8 +99,8 @@
 		"images": ["71a2e053-be41-4e7d-bebd-60375ab93b26/0.jpg"],
 		"stock": 16,
 		"price": 149,
-		"matirial": "plast",
-		"vikt": 13
+		"material": "plast",
+		"weight": 13
 	},
 	{
 		"id": "9c18dfb9-a936-46b7-ae19-e020ec9f0585",
@@ -110,8 +110,8 @@
 		"images": ["9c18dfb9-a936-46b7-ae19-e020ec9f0585/0.jpg"],
 		"stock": 3,
 		"price": 249,
-		"matirial": "coper",
-		"vikt": 15
+		"material": "coper",
+		"weight": 15
 	},
 	{
 		"id": "dda04347-b918-4f5d-9f7d-206fe65c6e30",
@@ -121,8 +121,8 @@
 		"images": ["dda04347-b918-4f5d-9f7d-206fe65c6e30/0.jpg"],
 		"stock": 9,
 		"price": 499,
-		"matirial": "silver",
-		"vikt": 98
+		"material": "silver",
+		"weight": 98
 	},
 	{
 		"id": "7be728f6-29a5-4587-8c07-825587d5ac9d",
@@ -132,8 +132,8 @@
 		"images": ["7be728f6-29a5-4587-8c07-825587d5ac9d/0.jpg"],
 		"stock": 17,
 		"price": 149,
-		"matirial": "platin",
-		"vikt": 77
+		"material": "platin",
+		"weight": 77
 	},
 	{
 		"id": "f357fc33-1d11-498d-8e32-b9d7cde2461d",
@@ -143,8 +143,8 @@
 		"images": ["f357fc33-1d11-498d-8e32-b9d7cde2461d/0.jpg"],
 		"stock": 3,
 		"price": 2999,
-		"matirial": "vitt gold",
-		"vikt": 66
+		"material": "vitt gold",
+		"weight": 66
 	},
 	{
 		"id": "bdbe5a4c-92a2-49ec-ab72-5b3da5fa2ce9",
@@ -154,8 +154,8 @@
 		"images": ["bdbe5a4c-92a2-49ec-ab72-5b3da5fa2ce9/0.jpg"],
 		"stock": 181,
 		"price": 149,
-		"matirial": "metal",
-		"vikt": 87
+		"material": "metal",
+		"weight": 87
 	},
 	{
 		"id": "032cbc00-e00c-46b5-8a37-88ac7bd66d96",
@@ -165,8 +165,8 @@
 		"images": ["032cbc00-e00c-46b5-8a37-88ac7bd66d96/0.jpg"],
 		"stock": 13,
 		"price": 1299,
-		"matirial": "blandat material ",
-		"vikt": 230
+		"material": "blandat material ",
+		"weight": 230
 	},
 	{
 		"id": "7bcae998-b7dc-4494-9a6c-56478d890cf8",
@@ -176,8 +176,8 @@
 		"images": ["7bcae998-b7dc-4494-9a6c-56478d890cf8/0.jpg"],
 		"stock": 1,
 		"price": 349,
-		"matirial": "plast och glas",
-		"vikt": 198
+		"material": "plast och glas",
+		"weight": 198
 	},
 	{
 		"id": "681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0",
@@ -187,8 +187,8 @@
 		"images": ["681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0/0.jpg"],
 		"stock": 21,
 		"price": 1499,
-		"matirial": "metal",
-		"vikt": 220
+		"material": "metal",
+		"weight": 220
 	},
 	{
 		"id": "4ab4db67-9614-4908-b563-63cf42585749",
@@ -198,8 +198,8 @@
 		"images": ["4ab4db67-9614-4908-b563-63cf42585749/0.jpg"],
 		"stock": 52,
 		"price": 899,
-		"matirial": "paltin och glas",
-		"vikt": 210
+		"material": "paltin och glas",
+		"weight": 210
 	},
 	{
 		"id": "0cd2edc6-cbfa-440b-9c09-1c569042c69b",
@@ -209,8 +209,8 @@
 		"images": ["0cd2edc6-cbfa-440b-9c09-1c569042c69b/0.jpg"],
 		"stock": 9,
 		"price": 249,
-		"matirial": " plast och glas",
-		"vikt": 105
+		"material": " plast och glas",
+		"weight": 105
 	},
 	{
 		"id": "7b67fbcb-20c8-45c5-9f8a-3ff31eab85a4",
@@ -220,8 +220,8 @@
 		"images": ["7b67fbcb-20c8-45c5-9f8a-3ff31eab85a4/0.jpg"],
 		"stock": 192,
 		"price": 149,
-		"matirial": "plast",
-		"vikt": 133
+		"material": "plast",
+		"weight": 133
 	},
 	{
 		"id": "f6679b4b-efc5-4a92-950f-ff7274b784c5",
@@ -231,8 +231,8 @@
 		"images": ["f6679b4b-efc5-4a92-950f-ff7274b784c5/0.jpg"],
 		"stock": 14,
 		"price": 89,
-		"matirial": "plast och glas",
-		"vikt": 127
+		"material": "plast och glas",
+		"weight": 127
 	},
 	{
 		"id": "f9431042-25e0-4ba5-8291-37c2e16a8881",
@@ -242,8 +242,8 @@
 		"images": ["f9431042-25e0-4ba5-8291-37c2e16a8881/0.png"],
 		"stock": 19,
 		"price": 1199,
-		"matirial": "plast och glas",
-		"vikt": 120
+		"material": "plast och glas",
+		"weight": 120
 	},
 	{
 		"id": "85a5c68f-a3ce-4217-ab2a-592f99d1fa1b",
@@ -257,8 +257,8 @@
 		],
 		"stock": 14,
 		"price": 149,
-		"matirial": "skin",
-		"vikt": 133
+		"material": "skin",
+		"weight": 133
 	},
 	{
 		"id": "2029ce36-b763-4856-8a6b-dc79d2f0a8c6",
@@ -268,8 +268,8 @@
 		"images": ["2029ce36-b763-4856-8a6b-dc79d2f0a8c6/0.jpg"],
 		"stock": 17,
 		"price": 249,
-		"matirial": "renskinn",
-		"vikt": 126
+		"material": "renskinn",
+		"weight": 126
 	},
 	{
 		"id": "23a1cdad-9c66-49ba-aacf-01e43c9ce869",
@@ -279,8 +279,8 @@
 		"images": ["23a1cdad-9c66-49ba-aacf-01e43c9ce869/0.jpg"],
 		"stock": 203,
 		"price": 149,
-		"matirial": "renskinn och plast",
-		"vikt": 134
+		"material": "renskinn och plast",
+		"weight": 134
 	},
 	{
 		"id": "b0e9353a-2118-41db-8b53-047550b496bd",
@@ -290,7 +290,7 @@
 		"images": ["b0e9353a-2118-41db-8b53-047550b496bd/0.jpg"],
 		"stock": 15,
 		"price": 399,
-		"matirial": "polistir",
-		"vikt": 155
+		"material": "polistir",
+		"weight": 155
 	}
 ]
