@@ -108,7 +108,7 @@
 	</html>
 </template>
 
-<style>
+<style scoped>
 	* {
 		margin: 0;
 		padding: 0;
@@ -245,7 +245,7 @@
 		transition: all 0.2s ease;
 	}
 	.input-box select:focus {
-		background-color: #7ed321;
+		background-color: #d1b464;
 		color: #fff;
 		text-align: center;
 	}
@@ -262,6 +262,6 @@
 	}
 	button:hover {
 		cursor: pointer;
-		background: #5eb105;
+		background: #d1b464;
 	}
 </style>
