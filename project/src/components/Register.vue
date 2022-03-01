@@ -32,7 +32,7 @@
 							<input
 								type="text"
 								v-model="myPhone"
-								:class="{ 'form-control': true, 'is-invalid': !validPhone(phone) && phoneBlured }"
+								:class="{ 'form-control': true, 'is-invalid': !validPhone(myPhone) && phoneBlured }"
 								@blur="phoneBlured = true"
 							/>
 							<div class="invalid-feedback">Skriv in ett giltigt telefonnummer!</div>

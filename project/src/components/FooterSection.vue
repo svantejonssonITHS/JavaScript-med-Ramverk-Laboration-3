@@ -6,9 +6,9 @@
 				<div class="container py-4">
 					<div class="row gy-4 gx-5">
 						<div class="col-lg-4 col-md-6">
-							<h5 class="h1 text-white">Kundeservice</h5>
+							<h5 class="h1 text-white">Kundservice</h5>
 							<p class="small text-muted">
-								08 - 44 68 02 83 Mån - fre: 10.00 - 15.00 support@Accessories by five.se.
+								08 - 44 68 02 83 Mån - fre: 10.00 - 15.00 support@accessories by five.se.
 							</p>
 							<p class="small text-muted mb-0">
 								&copy; Copyrights. All rights reserved.
@@ -37,7 +37,7 @@
 									<input
 										class="form-control"
 										type="text"
-										placeholder="Recipient's username"
+										placeholder="E-post"
 										aria-label="Recipient's username"
 										aria-describedby="button-addon2"
 									/>

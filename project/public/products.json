@@ -11,7 +11,7 @@
 		],
 		"stock": 21,
 		"price": 2000,
-		"material": "plast och glas",
+		"material": "plast, glas",
 		"weight": 87
 	},
 	{
@@ -22,7 +22,7 @@
 		"images": ["d8907f9d-af50-49fe-afcc-1cd394aba056/0.jpg"],
 		"stock": 14,
 		"price": 529,
-		"material": "tyg och polister",
+		"material": "metall",
 		"weight": 22
 	},
 	{
@@ -33,7 +33,7 @@
 		"images": ["c0ddf106-e306-463d-9736-4a652466f464/0.jpg"],
 		"stock": 10,
 		"price": 149,
-		"material": "röda och vita pärlor",
+		"material": "akrylpärlor",
 		"weight": 21
 	},
 	{
@@ -44,7 +44,7 @@
 		"images": ["7c9c1f27-c73f-433f-a8e9-fbe0d9b1bd92/0.jpg"],
 		"stock": 7,
 		"price": 199,
-		"material": "platin",
+		"material": "läder, akrylpärlor",
 		"weight": 26
 	},
 	{
@@ -55,7 +55,7 @@
 		"images": ["a1529887-69c6-49fd-8be6-1844a8ff54be/0.jpg"],
 		"stock": 2,
 		"price": 99,
-		"material": "silver mid platin",
+		"material": "pärlor i akryl, metall, keramik",
 		"weight": 28
 	},
 	{
@@ -66,7 +66,7 @@
 		"images": ["997323a5-68d0-420e-8e1d-afb902838f90/0.jpg"],
 		"stock": 25,
 		"price": 499,
-		"material": "blandat metal",
+		"material": "metall",
 		"weight": 55
 	},
 	{
@@ -77,7 +77,7 @@
 		"images": ["7d1ebfe9-0a7e-4db6-a068-b1045a3251fe/0.jpg"],
 		"stock": 4,
 		"price": 499,
-		"material": "silver",
+		"material": "silver, halvädelsten",
 		"weight": 12
 	},
 	{
@@ -88,18 +88,18 @@
 		"images": ["59555930-be69-466f-91dc-2f564c26cc4b/0.jpg"],
 		"stock": 13,
 		"price": 449,
-		"material": "gold",
+		"material": "silver, halvädelsten",
 		"weight": 19
 	},
 	{
 		"id": "71a2e053-be41-4e7d-bebd-60375ab93b26",
 		"title": "Röda metallblommor",
 		"category": "Örhängen",
-		"description": "Dessa röda metallblommor sätter färg på vardagen.",
+		"description": "Dessa röda blommor i trä sätter färg på vardagen.",
 		"images": ["71a2e053-be41-4e7d-bebd-60375ab93b26/0.jpg"],
 		"stock": 16,
 		"price": 149,
-		"material": "plast",
+		"material": "kirurgiskt stål, trä",
 		"weight": 13
 	},
 	{
@@ -110,7 +110,7 @@
 		"images": ["9c18dfb9-a936-46b7-ae19-e020ec9f0585/0.jpg"],
 		"stock": 3,
 		"price": 249,
-		"material": "coper",
+		"material": "metall",
 		"weight": 15
 	},
 	{
@@ -121,7 +121,7 @@
 		"images": ["dda04347-b918-4f5d-9f7d-206fe65c6e30/0.jpg"],
 		"stock": 9,
 		"price": 499,
-		"material": "silver",
+		"material": "metall",
 		"weight": 98
 	},
 	{
@@ -132,7 +132,7 @@
 		"images": ["7be728f6-29a5-4587-8c07-825587d5ac9d/0.jpg"],
 		"stock": 17,
 		"price": 149,
-		"material": "platin",
+		"material": "trä, bomullssnöre, pärla i metall",
 		"weight": 77
 	},
 	{
@@ -143,7 +143,7 @@
 		"images": ["f357fc33-1d11-498d-8e32-b9d7cde2461d/0.jpg"],
 		"stock": 3,
 		"price": 2999,
-		"material": "vitt gold",
+		"material": "guld, halvädelsten",
 		"weight": 66
 	},
 	{
@@ -154,7 +154,7 @@
 		"images": ["bdbe5a4c-92a2-49ec-ab72-5b3da5fa2ce9/0.jpg"],
 		"stock": 181,
 		"price": 149,
-		"material": "metal",
+		"material": "pärlor i sten och akryl",
 		"weight": 87
 	},
 	{
@@ -165,7 +165,7 @@
 		"images": ["032cbc00-e00c-46b5-8a37-88ac7bd66d96/0.jpg"],
 		"stock": 13,
 		"price": 1299,
-		"material": "blandat material ",
+		"material": "metall, glas",
 		"weight": 230
 	},
 	{
@@ -176,7 +176,7 @@
 		"images": ["7bcae998-b7dc-4494-9a6c-56478d890cf8/0.jpg"],
 		"stock": 1,
 		"price": 349,
-		"material": "plast och glas",
+		"material": "gummi, metall, glas",
 		"weight": 198
 	},
 	{
@@ -187,7 +187,7 @@
 		"images": ["681ba08e-10cc-4ac4-94c2-53b8f6f3d7f0/0.jpg"],
 		"stock": 21,
 		"price": 1499,
-		"material": "metal",
+		"material": "metall, läder, glas",
 		"weight": 220
 	},
 	{
@@ -198,7 +198,7 @@
 		"images": ["4ab4db67-9614-4908-b563-63cf42585749/0.jpg"],
 		"stock": 52,
 		"price": 899,
-		"material": "paltin och glas",
+		"material": "metall, plast, glas",
 		"weight": 210
 	},
 	{
@@ -209,7 +209,7 @@
 		"images": ["0cd2edc6-cbfa-440b-9c09-1c569042c69b/0.jpg"],
 		"stock": 9,
 		"price": 249,
-		"material": " plast och glas",
+		"material": "plast och glas",
 		"weight": 105
 	},
 	{
@@ -257,7 +257,7 @@
 		],
 		"stock": 14,
 		"price": 149,
-		"material": "skin",
+		"material": "läder",
 		"weight": 133
 	},
 	{
@@ -279,7 +279,7 @@
 		"images": ["23a1cdad-9c66-49ba-aacf-01e43c9ce869/0.jpg"],
 		"stock": 203,
 		"price": 149,
-		"material": "renskinn och plast",
+		"material": "läder och plast",
 		"weight": 134
 	},
 	{
@@ -290,7 +290,7 @@
 		"images": ["b0e9353a-2118-41db-8b53-047550b496bd/0.jpg"],
 		"stock": 15,
 		"price": 399,
-		"material": "polistir",
+		"material": "läder och plast",
 		"weight": 155
 	}
 ]

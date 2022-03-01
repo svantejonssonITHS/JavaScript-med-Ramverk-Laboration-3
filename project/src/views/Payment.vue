@@ -5,7 +5,7 @@
 		<head>
 			<meta charset="UTF-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<title>PamentPage</title>
+			<title>PaymentPage</title>
 			<link href="paymentform.css" rel="stylesheet" />
 			<link
 				href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,22 +16,34 @@
 		</head>
 		<body>
 			<div class="wrapper">
-				<h2>Betalning Form</h2>
+				<h2>Betalning</h2>
 				<form method="POST">
 					<h4>Dina uppgifter</h4>
 					<div class="input-group">
 						<div class="input-box">
-							<input type="text" placeholder="Fullständiga namn" required class="name" />
+							<input type="text" placeholder="Förnamn" required class="name" :value="surName" />
 							<i class="fa fa-user icon"></i>
 						</div>
 						<div class="input-box">
-							<input type="text" placeholder="efter namn" required class="name" />
+							<input type="text" placeholder="Efternamn" required class="name" :value="familyName" />
 							<i class="fa fa-user icon"></i>
 						</div>
 					</div>
 					<div class="input-group">
 						<div class="input-box">
-							<input type="email" placeholder="Email Adress" required class="name" />
+							<input type="text" placeholder="Gatuadress" required class="name" :value="address" />
+						</div>
+						<div class="input-box">
+							<input type="text" placeholder="Postadress" required class="name" :value="zipCode" />
+						</div>
+						<div class="input-box">
+							<input type="text" placeholder="Telefonnummer" required class="name" :value="myPhone" />
+							<i class="fa fa-phone icon"></i>
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-box">
+							<input type="email" placeholder="Epost" required class="name" :value="eMail" />
 							<i class="fa fa-envelope icon"></i>
 						</div>
 					</div>
@@ -52,7 +64,7 @@
 					</div>
 					<div class="input-group">
 						<div class="input-box">
-							<h4>Betalnings Information</h4>
+							<h4>Betalningsinformation</h4>
 							<input type="radio" name="pay" id="bc1" checked class="radio" />
 							<label for="bc1"
 								><span><i class="fa fa-cc-visa"></i> Kreditkort</span></label
@@ -65,13 +77,13 @@
 					</div>
 					<div class="input-group">
 						<div class="input-box">
-							<input type="tel" placeholder="Card Number" required class="name" />
+							<input type="tel" placeholder="Kortnummer" required class="name" />
 							<i class="fa fa-credit-card icon"></i>
 						</div>
 					</div>
 					<div class="input-group">
 						<div class="input-box">
-							<input type="tel" placeholder="Card CVC" required class="name" />
+							<input type="tel" placeholder="CVC" required class="name" />
 							<i class="fa fa-user icon"></i>
 						</div>
 						<div class="input-box">
@@ -90,16 +102,16 @@
 								<option>december</option>
 							</select>
 							<select>
-								<option>2019</option>
-								<option>2020</option>
-								<option>2021</option>
 								<option>2022</option>
+								<option>2023</option>
+								<option>2024</option>
+								<option>2025</option>
 							</select>
 						</div>
 					</div>
 					<div class="input-group">
 						<div class="input-box">
-							<button type="submit">Betala nu</button>
+							<button class="btn btn-dark" type="submit">Betala nu</button>
 						</div>
 					</div>
 				</form>
@@ -107,7 +119,30 @@
 		</body>
 	</html>
 </template>
-
+<script>
+	export default {
+		computed: {
+			address() {
+				return this.$store.state.address;
+			},
+			eMail() {
+				return this.$store.state.eMail;
+			},
+			familyName() {
+				return this.$store.state.familyName;
+			},
+			myPhone() {
+				return this.$store.state.myPhone;
+			},
+			surName() {
+				return this.$store.state.surName;
+			},
+			zipCode() {
+				return this.$store.state.zipCode;
+			}
+		}
+	};
+</script>
 <style scoped>
 	* {
 		margin: 0;
@@ -254,7 +289,7 @@
 		background: transparent;
 		border: none;
 		background: #333;
-		color: rgb(24, 9, 9);
+		color: white;
 		padding: 15px;
 		border-radius: 4px;
 		font-size: 16px;

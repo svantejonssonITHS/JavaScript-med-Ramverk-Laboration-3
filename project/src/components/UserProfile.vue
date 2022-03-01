@@ -14,21 +14,21 @@
 						</div>
 						<div class="form-group">
 							Förnamn:<br />
-							<input type="text" name="name" class="form-control" /><br />
+							<input type="text" name="name" class="form-control" v-model="surName" /><br />
 						</div>
 						<div class="form-group">
 							Efternamn:<br />
-							<input type="text" name="name" class="form-control" /><br />
+							<input type="text" name="name" class="form-control" v-model="familyName" /><br />
 						</div>
 						<div class="form-group">
 							Gatuadress:<br />
-							<input type="text" name="address" class="form-control" />
+							<input type="text" name="address" class="form-control" v-model="address" />
 							<div id="emailHelp" class="form-text">Gata, nr, postbox etc.</div>
 							<br />
 						</div>
 						<div class="form-group">
 							Postadress:<br />
-							<input type="text" name="address" class="form-control" />
+							<input type="text" name="address" class="form-control" v-model="zipCode" />
 							<div id="emailHelp" class="form-text">Postnummer, postort.</div>
 							<br />
 						</div>
@@ -61,8 +61,8 @@
 							<label for="exampleInputPassword1" class="form-label">Bekräfta lösenord</label>
 							<input type="password" class="form-control" id="exampleInputPassword1" />
 						</div>
-						<button type="submit" class="btn btn-dark">Spara</button>
-						<button class="btn btn-dark" type="reset">Avbryt</button>
+						<button class="btn btn-dark" @click.stop.prevent="submit">Spara</button>
+						<button class="btn btn-dark" type="reset" @click.stop.prevent="submit">Avbryt</button>
 					</form>
 				</div>
 			</div>
@@ -80,6 +80,38 @@
 			},
 			userName() {
 				return this.$store.state.userName;
+			},
+			address: {
+				get() {
+					return this.$store.state.address;
+				},
+				set(value) {
+					this.$store.commit('updateAddress', value);
+				}
+			},
+			familyName: {
+				get() {
+					return this.$store.state.familyName;
+				},
+				set(value) {
+					this.$store.commit('updateFamilyName', value);
+				}
+			},
+			surName: {
+				get() {
+					return this.$store.state.surName;
+				},
+				set(value) {
+					this.$store.commit('updateSurName', value);
+				}
+			},
+			zipCode: {
+				get() {
+					return this.$store.state.zipCode;
+				},
+				set(value) {
+					this.$store.commit('updateZipCode', value);
+				}
 			}
 		}
 	};
