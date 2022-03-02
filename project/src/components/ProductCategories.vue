@@ -46,7 +46,7 @@
 		}
 	};
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 	.card {
 		margin: 1em 2em;
 		width: 20em;

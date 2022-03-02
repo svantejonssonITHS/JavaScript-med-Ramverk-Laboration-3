@@ -13,7 +13,7 @@
 		</form>
 	</div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 	button {
 		margin-right: 10px;
 		margin-top: 20px;
