@@ -45,7 +45,7 @@
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
 								>
-									<i id="search" class="fa fa-search" aria-hidden="true"></i>
+									<i id="search" class="fa fa-search" aria-hidden="true" @click="scrollWin()"></i>
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									<FilterSearch />
@@ -69,6 +69,12 @@
 	export default {
 		components: {
 			FilterSearch
+		},
+		methods: {
+			scrollWin() {
+				window.scrollTo(0, 500);
+				console.log('scroll to');
+			}
 		}
 	};
 </script>
