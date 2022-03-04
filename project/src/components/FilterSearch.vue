@@ -24,11 +24,7 @@
 </template>
 
 <script>
-	import SortedProduct from './SortedProduct.vue';
 	export default {
-		components: {
-			SortedProduct
-		},
 		created() {
 			let promise = fetch('/products.json');
 			promise.then((response) => {
