@@ -57,7 +57,13 @@
 				<div class="myContainer">
 					<router-link to="/signup" class="nav-item nav-link"><i class="fa fa-user-plus" id="addUser"></i></router-link>
 					<router-link to="/UserPage" class="nav-item nav-link"><i class="fa fa-user" id="user"></i></router-link>
-					<router-link to="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart" id="cart"></i></router-link>
+					<router-link to="/cart" class="nav-item nav-link"
+						><i class="fa fa-shopping-cart" id="cart"
+							><div id="notification-circle" v-if="cartLength > 0">
+								<p id="notification">{{ cartLength }}</p>
+							</div></i
+						></router-link
+					>
 				</div>
 			</div>
 		</nav>
@@ -70,6 +76,17 @@
 		components: {
 			FilterSearch
 		},
+
+		data() {
+			return { cartLength: 0 };
+		},
+
+		mounted() {
+			if (localStorage['cart']) {
+				this.cartLength = JSON.parse(localStorage.cart).length;
+			}
+		},
+
 		methods: {
 			scrollWin() {
 				window.scrollTo(0, 500);
@@ -135,5 +152,18 @@
 	}
 	#user {
 		font-size: 2em;
+	}
+	#notification-circle {
+		background-color: #d1b464;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		position: absolute;
+		top: 10px;
+		right: 15px;
+	}
+	#notification {
+		font-size: 30px;
+		text-align: center;
 	}
 </style>
