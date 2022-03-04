@@ -1,5 +1,37 @@
+<template>
+	<div class="overflow-scroll">
+		<div class="search col row-cols-1">
+			<input class="searchInput" type="text" v-model="search" placeholder="Search Your Products" />
+		</div>
+		<div class="buttons">
+			<input class="btn btn-dark" @click="sortingMode" type="button" value="Price-Low-high" />
+			<input class="btn btn-dark" @click="sortingMode" type="button" value=" Price-High-Low" />
+			<li v-for="product of sortedProducts" :key="product.id">{{ product.title }} {{ product.price }}</li>
+		</div>
+		<SortedProduct />
+
+		<div class="wrapper row row-cols-1 row-cols-md-3 g-4">
+			<div class="card" v-for="post in filteredList" :key="post.id">
+				<img :src="'assets/products/' + post.images[0]" class="card-img-top" alt="..." />
+				<div class="card-body">
+					<h5 class="card-title">{{ post.title }}</h5>
+					<p class="card-text">
+						{{ post.description }}
+					</p>
+					<h5>{{ post.price }} SEK</h5>
+					<router-link :to="`/product/${post.id}`" class="btn btn-dark">Info</router-link>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
 <script>
+	import SortedProduct from './SortedProduct.vue';
 	export default {
+		components: {
+			SortedProduct
+		},
 		created() {
 			let promise = fetch('/products.json');
 			promise.then((response) => {
@@ -29,27 +61,6 @@
 	};
 </script>
 
-<template>
-	<div class="overflow-scroll">
-		<div class="search col row-cols-1">
-			<input class="searchInput" type="text" v-model="search" placeholder="Search Your Products" />
-		</div>
-
-		<div class="wrapper row row-cols-1 row-cols-md-3 g-4">
-			<div class="card" v-for="post in filteredList" :key="post.id">
-				<img :src="'assets/products/' + post.images[0]" class="card-img-top" alt="..." />
-				<div class="card-body">
-					<h5 class="card-title">{{ post.title }}</h5>
-					<p class="card-text">
-						{{ post.description }}
-					</p>
-					<h5>{{ post.price }} SEK</h5>
-					<router-link :to="`/product/${post.id}`" class="btn btn-dark">Info</router-link>
-				</div>
-			</div>
-		</div>
-	</div>
-</template>
 <style lang="scss" scoped>
 	.overflow-scroll {
 		max-height: 75vh;
@@ -71,5 +82,9 @@
 	.searchInput {
 		padding: 0.5em;
 		text-align: center;
+	}
+	.buttons {
+		margin-bottom: 40px;
+		margin-left: 40px;
 	}
 </style>
