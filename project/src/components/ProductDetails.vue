@@ -3,14 +3,12 @@
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item" aria-current="page">
-					<router-link to="/product/d8907f9d-af50-49fe-afcc-1cd394aba056" class="text-underline-hover"
-						>Sortiment</router-link
-					>
+					<router-link to="/allProducts" class="text-underline-hover">Sortiment</router-link>
 				</li>
 				<li class="breadcrumb-item" aria-current="page">
-					<router-link to="/product/d8907f9d-af50-49fe-afcc-1cd394aba056" class="text-underline-hover">{{
-						category
-					}}</router-link>
+					<router-link :to="`/productCategories/${category}`" class="text-underline-hover">
+						{{ category }}
+					</router-link>
 				</li>
 				<li class="breadcrumb-item active" aria-current="page">
 					{{ title }}
@@ -26,7 +24,7 @@
 				>{{ stock }} <span v-if="fewInStock">(Få kvar)</span></span
 			>
 		</p>
-		<button class="btn btn-secondary col-4 py-3 my-5 fw-bold" @click="addToCartClicked">
+		<button class="btn btn-secondary col-8 col-lg-4 mx-auto mx-lg-0 my-5 d-block py-3 fw-bold" @click="addToCartClicked">
 			Lägg till i varukorgen
 		</button>
 	</section>
@@ -66,6 +64,7 @@
 		methods: {
 			addToCartClicked() {
 				this.$emit('addToCartClicked');
+				window.location.reload();
 			}
 		},
 		computed: {

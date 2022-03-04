@@ -1,12 +1,36 @@
 import { createStore } from 'vuex';
 
 const mutations = {
-		increment(state) {
-			state.counter += 1;
+		updateAddress(state, address) {
+			state.address = address;
+		},
+		updateEmail(state, eMail) {
+			state.eMail = eMail;
+		},
+		updateFamilyName(state, familyName) {
+			state.familyName = familyName;
+		},
+		updateMyPhone(state, myPhone) {
+			state.myPhone = myPhone;
+		},
+		updateSurName(state, surName) {
+			state.surName = surName;
+		},
+		updateUserName(state, userName) {
+			state.userName = userName;
+		},
+		updateZipCode(state, zipCode) {
+			state.zipCode = zipCode;
 		}
 	},
 	state = {
-		counter: 0
+		address: '',
+		eMail: '',
+		familyName: '',
+		myPhone: '',
+		surName: '',
+		userName: '',
+		zipCode: ''
 	};
 
 export default createStore({ mutations, state, strict: true });

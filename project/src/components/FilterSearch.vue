@@ -7,7 +7,6 @@
 			<input class="btn btn-dark" @click="onAsc" type="button" value="Price-Low-high" />
 			<input class="btn btn-dark" @click="onDsc" type="button" value=" Price-High-Low" />
 		</div>
-
 		<div class="wrapper row row-cols-1 row-cols-md-3 g-4">
 			<div class="card" v-for="post in filteredList" :key="post.id">
 				<img :src="'assets/products/' + post.images[0]" class="card-img-top" alt="..." />
@@ -25,21 +24,22 @@
 </template>
 
 <script>
+	import SortedProduct from './SortedProduct.vue';
 	export default {
+		components: {
+			SortedProduct
+		},
 		created() {
 			let promise = fetch('/products.json');
-
 			promise.then((response) => {
 				console.log(response.json());
 			});
-
 			fetch('/products.json')
 				.then((response) => response.json())
 				.then((products) => {
 					this.products = products;
 				});
 		},
-
 		data() {
 			return {
 				products: null,
@@ -47,6 +47,7 @@
 				sortDirection: 0
 			};
 		},
+
 		computed: {
 			filteredList() {
 				if (!this.products) return;
