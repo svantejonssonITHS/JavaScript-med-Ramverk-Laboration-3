@@ -1,126 +1,122 @@
 <!-- I create this payment.vue to be the payment page -->
 <template>
-	<!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<meta charset="UTF-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<title>PaymentPage</title>
-			<link href="paymentform.css" rel="stylesheet" />
-			<link
-				href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-				rel="stylesheet"
-				integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-				crossorigin="anonymous"
-			/>
-		</head>
-		<body>
-			<div class="wrapper">
-				<h2>Betalning</h2>
-				<form method="POST">
-					<h4>Dina uppgifter</h4>
-					<div class="input-group">
-						<div class="input-box">
-							<input type="text" placeholder="Förnamn" required class="name" :value="surName" />
-							<i class="fa fa-user icon"></i>
-						</div>
-						<div class="input-box">
-							<input type="text" placeholder="Efternamn" required class="name" :value="familyName" />
-							<i class="fa fa-user icon"></i>
-						</div>
-					</div>
-					<div class="input-group">
-						<div class="input-box">
-							<input type="text" placeholder="Gatuadress" required class="name" :value="address" />
-						</div>
-						<div class="input-box">
-							<input type="text" placeholder="Postadress" required class="name" :value="zipCode" />
-						</div>
-						<div class="input-box">
-							<input type="text" placeholder="Telefonnummer" required class="name" :value="myPhone" />
-							<i class="fa fa-phone icon"></i>
-						</div>
-					</div>
-					<div class="input-group">
-						<div class="input-box">
-							<input type="email" placeholder="Epost" required class="name" :value="eMail" />
-							<i class="fa fa-envelope icon"></i>
-						</div>
-					</div>
-					<div class="input-group">
-						<div class="input-box">
-							<h4>Födelsedatum</h4>
-							<input type="text" placeholder="DD" class="dob" />
-							<input type="text" placeholder="MM" class="dob" />
-							<input type="text" placeholder="YYYY" class="dob" />
-						</div>
-						<div class="input-box">
-							<h4>Kön</h4>
-							<input type="radio" id="b1" name="gendar" checked class="radio" />
-							<label for="b1">Man</label>
-							<input type="radio" id="b2" name="gendar" class="radio" />
-							<label for="b2">Kvinna</label>
-						</div>
-					</div>
-					<div class="input-group">
-						<div class="input-box">
-							<h4>Betalningsinformation</h4>
-							<input type="radio" name="pay" id="bc1" checked class="radio" />
-							<label for="bc1"
-								><span><i class="fa fa-cc-visa"></i> Kreditkort</span></label
-							>
-							<input type="radio" name="pay" id="bc2" class="radio" />
-							<label for="bc2"
-								><span><i class="fa fa-cc-paypal"></i> Paypal</span></label
-							>
-						</div>
-					</div>
-					<div class="input-group">
-						<div class="input-box">
-							<input type="tel" placeholder="Kortnummer" required class="name" />
-							<i class="fa fa-credit-card icon"></i>
-						</div>
-					</div>
-					<div class="input-group">
-						<div class="input-box">
-							<input type="tel" placeholder="CVC" required class="name" />
-							<i class="fa fa-user icon"></i>
-						</div>
-						<div class="input-box">
-							<select>
-								<option>januari</option>
-								<option>februari</option>
-								<option>mars</option>
-								<option>april</option>
-								<option>maj</option>
-								<option>juni</option>
-								<option>juli</option>
-								<option>augusti</option>
-								<option>september</option>
-								<option>oktober</option>
-								<option>november</option>
-								<option>december</option>
-							</select>
-							<select>
-								<option>2022</option>
-								<option>2023</option>
-								<option>2024</option>
-								<option>2025</option>
-							</select>
-						</div>
-					</div>
-					<div class="input-group">
-						<div class="input-box">
-							<button class="btn btn-dark" type="submit">Betala nu</button>
-						</div>
-					</div>
-				</form>
+	<div class="wrapper">
+		<h2>Betalning</h2>
+		<form method="POST" v-on:submit="handleSubmit">
+			<h4>Dina uppgifter</h4>
+			<div class="input-group">
+				<div class="input-box">
+					<input type="text" placeholder="Förnamn" required class="name" :value="surName" />
+					<i class="fa fa-user icon"></i>
+				</div>
+				<div class="input-box">
+					<input type="text" placeholder="Efternamn" required class="name" :value="familyName" />
+					<i class="fa fa-user icon"></i>
+				</div>
 			</div>
-		</body>
-	</html>
+			<div class="input-group">
+				<div class="input-box">
+					<input type="text" placeholder="Gatuadress" required class="name" :value="address" />
+				</div>
+				<div class="input-box">
+					<input type="text" placeholder="Postadress" required class="name" :value="zipCode" />
+				</div>
+				<div class="input-box">
+					<input type="text" placeholder="Telefonnummer" required class="name" :value="myPhone" />
+					<i class="fa fa-phone icon"></i>
+				</div>
+			</div>
+			<div class="input-group">
+				<div class="input-box">
+					<input type="email" placeholder="Epost" required class="name" :value="eMail" />
+					<i class="fa fa-envelope icon"></i>
+				</div>
+			</div>
+			<div class="input-group">
+				<div class="input-box">
+					<h4>Födelsedatum</h4>
+					<input type="text" placeholder="DD" class="dob" />
+					<input type="text" placeholder="MM" class="dob" />
+					<input type="text" placeholder="YYYY" class="dob" />
+				</div>
+				<div class="input-box">
+					<h4>Kön</h4>
+					<input type="radio" id="b1" name="gendar" checked class="radio" />
+					<label for="b1">Man</label>
+					<input type="radio" id="b2" name="gendar" class="radio" />
+					<label for="b2">Kvinna</label>
+				</div>
+			</div>
+			<div class="input-group">
+				<div class="input-box">
+					<h4>Betalningsinformation</h4>
+					<input type="radio" name="pay" id="bc1" checked class="radio" />
+					<label for="bc1"
+						><span><i class="fa fa-cc-visa"></i> Kreditkort</span></label
+					>
+					<input type="radio" name="pay" id="bc2" class="radio" />
+					<label for="bc2"
+						><span><i class="fa fa-cc-paypal"></i> Paypal</span></label
+					>
+				</div>
+			</div>
+			<div class="input-group">
+				<div class="input-box">
+					<input type="tel" placeholder="Kortnummer" required class="name" />
+					<i class="fa fa-credit-card icon"></i>
+				</div>
+			</div>
+			<div class="input-group">
+				<div class="input-box">
+					<input type="tel" placeholder="CVC" required class="name" />
+					<i class="fa fa-user icon"></i>
+				</div>
+				<div class="input-box">
+					<select>
+						<option>januari</option>
+						<option>februari</option>
+						<option>mars</option>
+						<option>april</option>
+						<option>maj</option>
+						<option>juni</option>
+						<option>juli</option>
+						<option>augusti</option>
+						<option>september</option>
+						<option>oktober</option>
+						<option>november</option>
+						<option>december</option>
+					</select>
+					<select>
+						<option>2022</option>
+						<option>2023</option>
+						<option>2024</option>
+						<option>2025</option>
+					</select>
+				</div>
+			</div>
+			<!-- here i added payment message  -->
+			<div v-if="submitted" class="alert alert-success" role="alert">Paymnet successful!</div>
+			<div class="input-group">
+				<div class="input-box">
+					<button class="btn btn-dark" type="submit">Betala nu</button>
+				</div>
+			</div>
+		</form>
+	</div>
 </template>
 <script>
 	export default {
+		// show susefull message by ckliking on the butten betalanu
+		data() {
+			return { submitted: false };
+		},
+		methods: {
+			handleSubmit(e) {
+				e.preventDefault();
+				this.submitted = true;
+				return false;
+			}
+		},
 		computed: {
 			address() {
 				return this.$store.state.address;
@@ -144,11 +140,6 @@
 	};
 </script>
 <style scoped>
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
 	body {
 		background-color: #f5f5f5;
 		font-family: Arial, Helvetica, sans-serif;
