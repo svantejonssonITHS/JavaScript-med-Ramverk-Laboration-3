@@ -8,7 +8,7 @@ För information om hur utvecklingen går till, tryck [här](developmentGuide.md
 
 ## Regler för bidrag
 
-För information om vilka regler bidrag till projektet som ska följa, tryck [här](projectRegulations.md#bidrags-regler-för-projektet).
+För information om vilka regler bidrag till projektet ska följa, tryck [här](projectRegulations.md#bidrags-regler-för-projektet).
 
 ## Definition of Done
 
