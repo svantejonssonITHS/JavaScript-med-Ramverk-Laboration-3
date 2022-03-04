@@ -2,24 +2,22 @@
 	export default {
 		created() {
 			let promise = fetch('/products.json');
-
 			promise.then((response) => {
 				console.log(response.json());
 			});
-
 			fetch('/products.json')
 				.then((response) => response.json())
 				.then((products) => {
 					this.products = products;
 				});
 		},
-
 		data() {
 			return {
 				products: null,
 				search: ''
 			};
 		},
+
 		computed: {
 			filteredList() {
 				if (!this.products) return;
