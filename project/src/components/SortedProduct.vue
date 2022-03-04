@@ -1,3 +1,7 @@
+<template>
+	<li v-for="product of sortedProducts" :key="product.id">{{ product.title }} {{ product.price }}</li>
+</template>
+
 <script>
 	export default {
 		created() {
