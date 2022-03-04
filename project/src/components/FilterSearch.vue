@@ -4,12 +4,9 @@
 			<input class="searchInput" type="text" v-model="search" placeholder="Search Your Products" />
 		</div>
 		<div class="buttons">
-			<input class="btn btn-dark" @click="sortingMode" type="button" value="Price-Low-high" />
-			<input class="btn btn-dark" @click="sortingMode" type="button" value=" Price-High-Low" />
-			<li v-for="product of sortedProducts" :key="product.id">{{ product.title }} {{ product.price }}</li>
+			<input class="btn btn-dark" @click="onAsc" type="button" value="Price-Low-high" />
+			<input class="btn btn-dark" @click="onDsc" type="button" value=" Price-High-Low" />
 		</div>
-		<SortedProduct />
-
 		<div class="wrapper row row-cols-1 row-cols-md-3 g-4">
 			<div class="card" v-for="post in filteredList" :key="post.id">
 				<img :src="'assets/products/' + post.images[0]" class="card-img-top" alt="..." />
@@ -27,11 +24,7 @@
 </template>
 
 <script>
-	import SortedProduct from './SortedProduct.vue';
 	export default {
-		components: {
-			SortedProduct
-		},
 		created() {
 			let promise = fetch('/products.json');
 			promise.then((response) => {
@@ -46,16 +39,29 @@
 		data() {
 			return {
 				products: null,
-				search: ''
+				search: '',
+				sortDirection: 0
 			};
 		},
 
 		computed: {
 			filteredList() {
 				if (!this.products) return;
-				return this.products.filter((post) => {
-					return post.title.toLowerCase().includes(this.search.toLowerCase());
-				});
+				return this.products
+					.filter((post) => {
+						return post.title.toLowerCase().includes(this.search.toLowerCase());
+					})
+					.sort((a, b) => {
+						return (a.price - b.price) * this.sortDirection;
+					});
+			}
+		},
+		methods: {
+			onAsc() {
+				this.sortDirection = +1;
+			},
+			onDsc() {
+				this.sortDirection = -1;
 			}
 		}
 	};
