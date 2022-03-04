@@ -23,6 +23,7 @@
 
 		computed: {
 			sortedProducts() {
+				if (!this.products) return;
 				return [...this.products].sort((a, b) => {
 					if (!this.sortingMode == 'asc') {
 						return a.price - b.price;
