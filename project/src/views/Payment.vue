@@ -100,6 +100,7 @@
 				<h3 class="alert-heading">Bra gjort!</h3>
 				Betalningen har genomförts
 			</div>
+
 			<div class="input-group">
 				<div class="input-box">
 					<button class="btn btn-dark" type="submit">Betala nu</button>
