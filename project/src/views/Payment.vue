@@ -95,7 +95,11 @@
 				</div>
 			</div>
 			<!-- here i added payment message  -->
-			<div v-if="submitted" class="alert alert-success" role="alert">Paymnet successful!</div>
+
+			<div v-if="submitted" class="alert alert-success" role="alert">
+				<h3 class="alert-heading">Bra gjort!</h3>
+				Betalningen har genomförts
+			</div>
 			<div class="input-group">
 				<div class="input-box">
 					<button class="btn btn-dark" type="submit">Betala nu</button>
