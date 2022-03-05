@@ -2,7 +2,7 @@
 <template>
 	<div class="wrapper">
 		<h2>Betalning</h2>
-		<form method="POST" v-on:submit="handleSubmit">
+		<form method="POST" @submit="handleSubmit">
 			<h4>Dina uppgifter</h4>
 			<div class="input-group">
 				<div class="input-box">
