@@ -167,4 +167,9 @@
 		font-size: 30px;
 		text-align: center;
 	}
+
+	.dropdown-menu {
+		left: 50% !important;
+		transform: translateX(-35%);
+	}
 </style>
