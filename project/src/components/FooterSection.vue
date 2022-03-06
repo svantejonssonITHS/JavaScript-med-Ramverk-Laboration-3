@@ -8,7 +8,7 @@
 						<div class="col-lg-4 col-md-6">
 							<h5 class="h1 text-white">Kundservice</h5>
 							<p class="small text-muted">
-								08 - 44 68 02 83 Mån - fre: 10.00 - 15.00 support@accessories by five.se.
+								08 - 44 68 02 83 Mån - fre: 10.00 - 15.00 support@accessoriesbyfive.se.
 							</p>
 							<p class="small text-muted mb-0">
 								&copy; Copyrights. All rights reserved.

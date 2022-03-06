@@ -14,17 +14,17 @@ const router = createRouter({
 			path: '/categories'
 		},
 		{
-			name: 'ProductCategories',
+			name: 'Product Categories',
 			component: () => import('./components/ProductCategories.vue'),
 			path: '/productCategories/:category'
 		},
 		{
-			name: 'ContactUs',
+			name: 'Contact Us',
 			component: () => import('./views/ContactUs.vue'),
 			path: '/contact'
 		},
 		{
-			name: 'UserPage',
+			name: 'Profile',
 			component: () => import('./views/UserPage.vue'),
 			path: '/userPage/'
 		},
@@ -44,7 +44,7 @@ const router = createRouter({
 			path: '/cart'
 		},
 		{
-			name: 'signup',
+			name: 'Sign Up',
 			component: () => import('./components/Register.vue'),
 			path: '/signup'
 		},

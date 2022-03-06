@@ -1,7 +1,7 @@
 <template>
 	<nav>
 		<HeaderImage />
-		<NavBar />
+		<NavBar ref="navbar" />
 	</nav>
 
 	<RouterView />
@@ -15,7 +15,6 @@
 		:type="toastType"
 		:position="toastPosition"
 		:duration="toastDuration"
-		ref="toast"
 		@toast-end="destroyToast"
 	/>
 </template>

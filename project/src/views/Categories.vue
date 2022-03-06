@@ -1,5 +1,3 @@
-<script></script>
-
 <template>
 	<h1 class="display-3">Kategorier</h1>
 

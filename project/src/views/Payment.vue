@@ -1,5 +1,5 @@
-<!-- I create this payment.vue to be the payment page -->
 <template>
+	<!-- I create this payment.vue to be the payment page -->
 	<div class="wrapper">
 		<h2>Betalning</h2>
 		<form method="POST" @submit="handleSubmit">

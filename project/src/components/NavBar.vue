@@ -82,15 +82,16 @@
 		},
 
 		mounted() {
-			if (localStorage['cart']) {
-				this.cartLength = JSON.parse(localStorage.cart).length;
-			}
+			this.updateCartNumber();
 		},
-
 		methods: {
 			scrollWin() {
 				window.scrollTo(0, 500);
-				console.log('scroll to');
+			},
+			updateCartNumber() {
+				if (localStorage['cart']) {
+					this.cartLength = JSON.parse(localStorage.cart).length;
+				}
 			}
 		}
 	};
@@ -165,5 +166,10 @@
 	#notification {
 		font-size: 30px;
 		text-align: center;
+	}
+
+	.dropdown-menu {
+		left: 50% !important;
+		transform: translateX(-35%);
 	}
 </style>

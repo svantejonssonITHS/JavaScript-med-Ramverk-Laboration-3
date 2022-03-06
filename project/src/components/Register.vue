@@ -64,8 +64,6 @@
 	</div>
 </template>
 <script>
-	//importing bootstrap 5 Modules
-	import 'bootstrap/dist/css/bootstrap.min.css';
 	export default {
 		computed: {
 			eMail: {
@@ -82,8 +80,6 @@
 				},
 				set(value) {
 					this.$store.commit('updateMyPhone', value);
-					console.log(this.myPhone);
-					console.log('computed');
 				}
 			},
 			userName: {
@@ -92,8 +88,6 @@
 				},
 				set(value) {
 					this.$store.commit('updateUserName', value);
-					console.log(this.userName);
-					console.log('computed');
 				}
 			}
 		},

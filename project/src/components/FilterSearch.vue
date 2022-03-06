@@ -26,10 +26,6 @@
 <script>
 	export default {
 		created() {
-			let promise = fetch('/products.json');
-			promise.then((response) => {
-				console.log(response.json());
-			});
 			fetch('/products.json')
 				.then((response) => response.json())
 				.then((products) => {

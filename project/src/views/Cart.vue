@@ -81,6 +81,7 @@
 				localStorage.setItem('cart', JSON.stringify(this.cart));
 
 				this.$root.createToast(this.toastOptions);
+				this.$root.$refs.navbar.updateCartNumber();
 			}
 		},
 		computed: {

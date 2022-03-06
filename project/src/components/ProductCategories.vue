@@ -25,7 +25,6 @@
 				() => this.$route.params,
 				() => {
 					this.fetchData();
-					console.log('watch');
 				}
 			);
 		},
@@ -39,9 +38,7 @@
 			fetchData() {
 				axios
 					.get('/products.json')
-					.then((response) => (this.products = response.data.filter((p) => p.category == this.myCat))),
-					console.log(this.products);
-				console.log(this.myCat);
+					.then((response) => (this.products = response.data.filter((p) => p.category == this.myCat)));
 			}
 		}
 	};
