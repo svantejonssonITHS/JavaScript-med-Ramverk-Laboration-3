@@ -94,7 +94,6 @@
 		watch: {
 			amountDisplayed() {
 				this.allowButtonClick();
-
 				this.$emit('amountChanged', this.id, this.amountDisplayed);
 			}
 		},
