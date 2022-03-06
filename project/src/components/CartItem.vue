@@ -95,7 +95,6 @@
 			amountDisplayed() {
 				this.allowButtonClick();
 
-				// Emit to function
 				this.$emit('amountChanged', this.id, this.amountDisplayed);
 			}
 		},
