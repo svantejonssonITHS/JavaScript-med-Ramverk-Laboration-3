@@ -64,8 +64,6 @@
 	</div>
 </template>
 <script>
-	//importing bootstrap 5 Modules
-	import 'bootstrap/dist/css/bootstrap.min.css';
 	export default {
 		computed: {
 			eMail: {
