@@ -64,6 +64,10 @@
 	</div>
 </template>
 <script>
+	//importing bootstrap 5 Modules
+	import 'bootstrap/dist/css/bootstrap.min.css';
+	import 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js';
+
 	export default {
 		computed: {
 			eMail: {
@@ -80,6 +84,8 @@
 				},
 				set(value) {
 					this.$store.commit('updateMyPhone', value);
+					console.log(this.myPhone);
+					console.log('computed');
 				}
 			},
 			userName: {
@@ -88,6 +94,8 @@
 				},
 				set(value) {
 					this.$store.commit('updateUserName', value);
+					console.log(this.userName);
+					console.log('computed');
 				}
 			}
 		},
@@ -114,9 +122,9 @@
 				this.usernameBlured = true;
 				this.phoneBlured = true;
 				if (
-					this.validEmail(this.email) &&
+					this.validEmail(this.eMail) &&
 					this.validPassword(this.password) &&
-					this.validPhone(this.phone) &&
+					this.validPhone(this.myPhone) &&
 					this.validUsername(this.username)
 				) {
 					this.valid = true;
