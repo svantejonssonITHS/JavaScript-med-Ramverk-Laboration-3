@@ -1,18 +1,3 @@
-<script>
-	import axios from 'axios';
-
-	export default {
-		created() {
-			axios.get('/products.json').then((response) => (this.products = response.data));
-		},
-
-		data() {
-			return {
-				products: ''
-			};
-		}
-	};
-</script>
 <template>
 	<div class="row row-cols-1 row-cols-md-3 g-4">
 		<div class="card" v-for="product in products" :key="product.id">
@@ -28,6 +13,21 @@
 		</div>
 	</div>
 </template>
+<script>
+	import axios from 'axios';
+
+	export default {
+		created() {
+			axios.get('/products.json').then((response) => (this.products = response.data));
+		},
+
+		data() {
+			return {
+				products: ''
+			};
+		}
+	};
+</script>
 <style lang="scss" scoped>
 	.card {
 		margin: 1em 2em;
