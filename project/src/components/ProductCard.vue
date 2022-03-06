@@ -1,4 +1,5 @@
 <template>
+	<!-- Product card design by Anna Eriksson (Anna0516) and made into component by Svante Jonsson (svante-jonsson) -->
 	<div class="card">
 		<img :src="image" class="card-img-top" alt="..." />
 		<div class="card-body">
