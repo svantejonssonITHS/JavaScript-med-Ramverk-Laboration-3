@@ -87,7 +87,6 @@
 		methods: {
 			scrollWin() {
 				window.scrollTo(0, 500);
-				console.log('scroll to');
 			},
 			updateCartNumber() {
 				if (localStorage['cart']) {

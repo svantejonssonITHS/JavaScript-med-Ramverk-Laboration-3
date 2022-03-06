@@ -56,7 +56,6 @@
 	export default {
 		created() {
 			axios.get('/products.json').then((response) => (this.products = response.data));
-			console.log(this.products);
 		},
 
 		data() {
