@@ -57,7 +57,7 @@
 				let inCartIndex = cart.findIndex((o) => o.id === productID);
 
 				if (inCartIndex != -1) {
-					// The product already is in the cart. Therefore the amount is increased by 1
+					// Since the product already is in the cart, the amount is increased by 1
 					product.amount = cart[inCartIndex].amount + 1;
 					cart[inCartIndex] = product;
 				} else {
