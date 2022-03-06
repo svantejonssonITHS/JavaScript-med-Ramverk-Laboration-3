@@ -82,15 +82,17 @@
 		},
 
 		mounted() {
-			if (localStorage['cart']) {
-				this.cartLength = JSON.parse(localStorage.cart).length;
-			}
+			this.updateCartNumber();
 		},
-
 		methods: {
 			scrollWin() {
 				window.scrollTo(0, 500);
 				console.log('scroll to');
+			},
+			updateCartNumber() {
+				if (localStorage['cart']) {
+					this.cartLength = JSON.parse(localStorage.cart).length;
+				}
 			}
 		}
 	};

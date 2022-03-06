@@ -64,7 +64,6 @@
 		methods: {
 			addToCartClicked() {
 				this.$emit('addToCartClicked');
-				window.location.reload();
 			}
 		},
 		computed: {
