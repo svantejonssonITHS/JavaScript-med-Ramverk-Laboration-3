@@ -44,7 +44,6 @@
 				this.product = results.find((o) => o.id === this.$route.params.id);
 			},
 			addToCart(productID) {
-				this.$root.$refs.navbar.updateCartNumber();
 				// Cart item
 				let product = {
 					id: productID,
