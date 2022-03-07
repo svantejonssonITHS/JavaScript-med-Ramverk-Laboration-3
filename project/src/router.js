@@ -19,7 +19,7 @@ const router = createRouter({
 			path: '/productCategories/:category'
 		},
 		{
-			name: 'Contact Us',
+			name: 'Contact',
 			component: () => import('./views/ContactUs.vue'),
 			path: '/contact'
 		},
