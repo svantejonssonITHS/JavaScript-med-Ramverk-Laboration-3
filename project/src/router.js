@@ -15,7 +15,7 @@ const router = createRouter({
 		},
 		{
 			name: 'Product Categories',
-			component: () => import('./components/ProductCategories.vue'),
+			component: () => import('./views/ProductCategories.vue'),
 			path: '/productCategories/:category'
 		},
 		{
@@ -45,7 +45,7 @@ const router = createRouter({
 		},
 		{
 			name: 'Sign Up',
-			component: () => import('./components/Register.vue'),
+			component: () => import('./views/Register.vue'),
 			path: '/signup'
 		},
 		{
